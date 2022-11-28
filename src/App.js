@@ -1,5 +1,6 @@
 import Sidebar from "./components/Sidebar";
 import Topbar from "./components/Topbar";
+import Home from "./views/Home";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <Sidebar />
       <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
         <Topbar />
-        Main Content
+        <Home />
       </div>
     </div>
   );

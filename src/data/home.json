@@ -1,0 +1,1626 @@
+{
+  "data": {
+    "home": {
+      "__typename": "HomeResponsePayload",
+      "greeting": {
+        "text": "Good morning"
+      },
+      "sectionContainer": {
+        "uri": "spotify:page:0JQ5DAozXW0GUBAKjHsifD",
+        "sections": {
+          "items": [
+            {
+              "uri": "spotify:section:0JQ5DAuChZYPe9iDhh2mJz",
+              "data": {
+                "__typename": "HomeGenericSectionData",
+                "title": {
+                  "text": "Spotify Playlists"
+                }
+              },
+              "sectionItems": {
+                "items": [
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M",
+                        "name": "Today's Top Hits",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f0000000255d4466ee6bb4a1e484f4588",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#DC3B2C",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Taylor Swift is on top of the Hottest 50!",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX0XUsuxWHRQd",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX0XUsuxWHRQd",
+                        "name": "RapCaviar",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002a7c87745d3b0f192d0e23556",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#B80808",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Music from Drake, 21 Savage, Lil Uzi Vert and more.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX5Ejj0EkURtP",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX5Ejj0EkURtP",
+                        "name": "All Out 2010s",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f000000026532a0c7c8aa3e40a5851d8c",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#686868",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "The biggest songs of the 2010s. ",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DWXRqgorJj26U",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DWXRqgorJj26U",
+                        "name": "Rock Classics",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002b5d03b4eccf9aa6b902d0666",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#B00000",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Rock legends & epic songs that continue to inspire generations. Cover: Guns N' Roses",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX4WYpdgoIcn6",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX4WYpdgoIcn6",
+                        "name": "Chill Hits",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002bf2dc6fe9c88fc785f9c3735",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#687078",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Kick back to the best new and recent chill hits.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX10zKzsJ2jva",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX10zKzsJ2jva",
+                        "name": "Viva Latino",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f000000021b2ec90f8b93523933399657",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#4000F0",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Today's top Latin hits, elevando nuestra música. Cover: Paulo Londra",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DXbYM3nMM0oPk",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DXbYM3nMM0oPk",
+                        "name": "Mega Hit Mix",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002fecb9c578f38ebc8eef432cc",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#62789E",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "A mega mix of 75 favorites from the last few years! ",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX4UtSsGT1Sbe",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX4UtSsGT1Sbe",
+                        "name": "All Out 80s",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002e6ed19ecc791fce2ec58d005",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#D04840",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "The biggest songs of the 1980s.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  }
+                ],
+                "totalCount": 8
+              }
+            },
+            {
+              "uri": "spotify:section:0JQ5DAob0JCuWaGLU6ntFY",
+              "data": {
+                "__typename": "HomeGenericSectionData",
+                "title": {
+                  "text": "Focus"
+                }
+              },
+              "sectionItems": {
+                "items": [
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX4sWSpwq3LiO",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX4sWSpwq3LiO",
+                        "name": "Peaceful Piano",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#68798A",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Relax and indulge with beautiful piano pieces",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DWZeKCadgRdKQ",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DWZeKCadgRdKQ",
+                        "name": "Deep Focus",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f000000025551996f500ba876bda73fa5",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#404038",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Keep calm and focus with ambient and post-rock music.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX9sIqqvKsjG8",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX9sIqqvKsjG8",
+                        "name": "Instrumental Study",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f000000025d87659dcadef82dd0e73f56",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#82791B",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Focus with soft study music in the background.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX8Uebhn9wzrS",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX8Uebhn9wzrS",
+                        "name": "chill lofi study beats",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f000000025b0a7b8408322a3b9ed15e1e",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#E52820",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "The perfect study beats. Find your focus, crush your productivity. ",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX5trt9i14X7j",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX5trt9i14X7j",
+                        "name": "Coding Mode  ",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002863b311d4b787ed621f7e696",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#328729",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Dedicated to all the programmers out there.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DWT5lkChsPmpy",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DWT5lkChsPmpy",
+                        "name": "Workday Lounge",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002e435ce0a86a8b9dc24527618",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#5E7C81",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Lounge and chill out music for your workday.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DXa2SPUyWl8Y5",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DXa2SPUyWl8Y5",
+                        "name": "Beats to think to",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f0000000296e08a91ef3c7a6e7bfaa9a6",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#182040",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Focus with deep techno and tech house.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DWZZbwlv3Vmtr",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DWZZbwlv3Vmtr",
+                        "name": "Focus Flow",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002724554ed6bed6f051d9b0bfc",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#C82030",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Uptempo instrumental hip hop beats.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DWWTdxbiocWOL",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DWWTdxbiocWOL",
+                        "name": "Calm Before the Storm",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002ff55ef0570b629a51bfc43f4",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#406878",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Aerial post-rock sounds to take you somewhere else.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DWWn6teJIIcfG",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DWWn6teJIIcfG",
+                        "name": "Creative Focus",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f000000025a6fe5537cca0bb20e6abc5f",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#4A7F89",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Get your creative juices flowing with these instrumental masterpieces.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  }
+                ],
+                "totalCount": 17
+              }
+            },
+            {
+              "uri": "spotify:section:0JQ5DAob0JCuWaGLU6ntFT",
+              "data": {
+                "__typename": "HomeGenericSectionData",
+                "title": {
+                  "text": "Mood"
+                }
+              },
+              "sectionItems": {
+                "items": [
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX3rxVfibe1L0",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX3rxVfibe1L0",
+                        "name": "Mood Booster",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002bd0e19e810bb4b55ab164a95",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#2840B0",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Get happy with today's dose of feel-good songs!",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX9XIFQuFvzM4",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX9XIFQuFvzM4",
+                        "name": "Feelin' Good",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f0000000213a02d059c0479e65a850267",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#3D7AB7",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Feel good with this positively timeless playlist!",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX2pSTOxoPbx9",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX2pSTOxoPbx9",
+                        "name": "Dark & Stormy",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002a6e2870c97bde5e2719c20b8",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#B06058",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Beautifully dark, dramatic tracks.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DXcEKFjZJYZcc",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DXcEKFjZJYZcc",
+                        "name": "Feel Good Piano",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002f68ba9973e4f1f0cdf268ccd",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#A86900",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Happy vibes for an upbeat morning.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX6GwdWRQMQpq",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX6GwdWRQMQpq",
+                        "name": "Feelin' Myself",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f000000025a82853306e0a01ea4d7895b",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#767676",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "The hip-hop playlist that's a whole mood. Art By Laci Jordan; Cover: Saweetie",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DWSqBruwoIXkA",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DWSqBruwoIXkA",
+                        "name": "sad hour",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002c0d9b0a600352ab5d14abe70",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#603028",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Somehow heartbreak feels good in a place like this. Cover: Taylor Swift",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX6VdMW310YC7",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX6VdMW310YC7",
+                        "name": "Chill Tracks",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002d2bb7ed49c04499432b38e11",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#5E7D7D",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "Softer kinda <a href=\"spotify:genre:edm_dance\">dance</a>.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX2sUQwD7tbmL",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX2sUQwD7tbmL",
+                        "name": "Feel-Good Indie Rock",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f000000022390c211511e2d985935b267",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#184028",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "The best indie rock vibes — classic and current. ",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX59NCqCqJtoH",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX59NCqCqJtoH",
+                        "name": "idk.",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f00000002e6fc98620cda649d45e42bc6",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#6E7695",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "We hear you.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:playlist:37i9dQZF1DX6mvEU1S6INL",
+                    "content": {
+                      "__typename": "PlaylistResponseWrapper",
+                      "data": {
+                        "__typename": "Playlist",
+                        "uri": "spotify:playlist:37i9dQZF1DX6mvEU1S6INL",
+                        "name": "You & Me",
+                        "images": {
+                          "items": [
+                            {
+                              "sources": [
+                                {
+                                  "url": "https://i.scdn.co/image/ab67706f000000021aede1ba8a54598a84c1771f",
+                                  "width": null,
+                                  "height": null
+                                }
+                              ],
+                              "extractedColors": {
+                                "colorDark": {
+                                  "hex": "#003040",
+                                  "isFallback": false
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "description": "It's just us—and this awesome alt soundtrack.",
+                        "ownerV2": {
+                          "data": {
+                            "__typename": "User",
+                            "name": "Spotify"
+                          }
+                        }
+                      }
+                    },
+                    "data": null
+                  }
+                ],
+                "totalCount": 12
+              }
+            },
+            {
+              "uri": "spotify:section:0JQ5DAob0JwPhg9tCvIWPM",
+              "data": {
+                "__typename": "HomeGenericSectionData",
+                "title": {
+                  "text": "Popular new releases"
+                }
+              },
+              "sectionItems": {
+                "items": [
+                  {
+                    "uri": "spotify:album:2T1qRB6zSSGdNgcTD3Dg8H",
+                    "content": {
+                      "__typename": "AlbumResponseWrapper",
+                      "data": {
+                        "__typename": "Album",
+                        "uri": "spotify:album:2T1qRB6zSSGdNgcTD3Dg8H",
+                        "name": "Start Nowhere",
+                        "coverArt": {
+                          "sources": [
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00001e0277fe30c4a9851862d71f5503",
+                              "width": 300,
+                              "height": 300
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d0000485177fe30c4a9851862d71f5503",
+                              "width": 64,
+                              "height": 64
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d0000b27377fe30c4a9851862d71f5503",
+                              "width": 640,
+                              "height": 640
+                            }
+                          ],
+                          "extractedColors": {
+                            "colorDark": {
+                              "hex": "#B84038",
+                              "isFallback": false
+                            }
+                          }
+                        },
+                        "artists": {
+                          "items": [
+                            {
+                              "uri": "spotify:artist:2kucQ9jQwuD8jWdtR9Ef38",
+                              "profile": {
+                                "name": "Sam Hunt"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:album:5feRs2ejrMcxuM5hcDDSBb",
+                    "content": {
+                      "__typename": "AlbumResponseWrapper",
+                      "data": {
+                        "__typename": "Album",
+                        "uri": "spotify:album:5feRs2ejrMcxuM5hcDDSBb",
+                        "name": "This Is What I Mean",
+                        "coverArt": {
+                          "sources": [
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00001e02df075bcefe46d7ca94692651",
+                              "width": 300,
+                              "height": 300
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00004851df075bcefe46d7ca94692651",
+                              "width": 64,
+                              "height": 64
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d0000b273df075bcefe46d7ca94692651",
+                              "width": 640,
+                              "height": 640
+                            }
+                          ],
+                          "extractedColors": {
+                            "colorDark": {
+                              "hex": "#784038",
+                              "isFallback": false
+                            }
+                          }
+                        },
+                        "artists": {
+                          "items": [
+                            {
+                              "uri": "spotify:artist:2SrSdSvpminqmStGELCSNd",
+                              "profile": {
+                                "name": "Stormzy"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:album:6RmbogR9qpWasS4ZNa7cuK",
+                    "content": {
+                      "__typename": "AlbumResponseWrapper",
+                      "data": {
+                        "__typename": "Album",
+                        "uri": "spotify:album:6RmbogR9qpWasS4ZNa7cuK",
+                        "name": "Love Sux (Deluxe)",
+                        "coverArt": {
+                          "sources": [
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00001e021e0668d9ae6539617476416b",
+                              "width": 300,
+                              "height": 300
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d000048511e0668d9ae6539617476416b",
+                              "width": 64,
+                              "height": 64
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d0000b2731e0668d9ae6539617476416b",
+                              "width": 640,
+                              "height": 640
+                            }
+                          ],
+                          "extractedColors": {
+                            "colorDark": {
+                              "hex": "#A83800",
+                              "isFallback": false
+                            }
+                          }
+                        },
+                        "artists": {
+                          "items": [
+                            {
+                              "uri": "spotify:artist:0p4nmQO2msCgU4IF37Wi3j",
+                              "profile": {
+                                "name": "Avril Lavigne"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:album:0gr5OmB74UhoANEXwYT3gE",
+                    "content": {
+                      "__typename": "AlbumResponseWrapper",
+                      "data": {
+                        "__typename": "Album",
+                        "uri": "spotify:album:0gr5OmB74UhoANEXwYT3gE",
+                        "name": "Dreamers [Music from the FIFA World Cup Qatar 2022 Official Soundtrack]",
+                        "coverArt": {
+                          "sources": [
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00001e02ef57183066d6cac0cabb85c6",
+                              "width": 300,
+                              "height": 300
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00004851ef57183066d6cac0cabb85c6",
+                              "width": 64,
+                              "height": 64
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d0000b273ef57183066d6cac0cabb85c6",
+                              "width": 640,
+                              "height": 640
+                            }
+                          ],
+                          "extractedColors": {
+                            "colorDark": {
+                              "hex": "#506078",
+                              "isFallback": false
+                            }
+                          }
+                        },
+                        "artists": {
+                          "items": [
+                            {
+                              "uri": "spotify:artist:6HaGTQPmzraVmaVxvz6EUc",
+                              "profile": {
+                                "name": "Jung Kook"
+                              }
+                            },
+                            {
+                              "uri": "spotify:artist:3Nrfpe0tUJi4K4DXYWgMUX",
+                              "profile": {
+                                "name": "BTS"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:album:4ya6dMKyTfwrrcdkoROD8O",
+                    "content": {
+                      "__typename": "AlbumResponseWrapper",
+                      "data": {
+                        "__typename": "Album",
+                        "uri": "spotify:album:4ya6dMKyTfwrrcdkoROD8O",
+                        "name": "Frío",
+                        "coverArt": {
+                          "sources": [
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00001e02f09245896b985517ee014cdc",
+                              "width": 300,
+                              "height": 300
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00004851f09245896b985517ee014cdc",
+                              "width": 64,
+                              "height": 64
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d0000b273f09245896b985517ee014cdc",
+                              "width": 640,
+                              "height": 640
+                            }
+                          ],
+                          "extractedColors": {
+                            "colorDark": {
+                              "hex": "#547B9A",
+                              "isFallback": false
+                            }
+                          }
+                        },
+                        "artists": {
+                          "items": [
+                            {
+                              "uri": "spotify:artist:2UZIAOlrnyZmyzt1nuXr9y",
+                              "profile": {
+                                "name": "Nicki Nicole"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:album:43cDHyzNftlde27nFt8rhV",
+                    "content": {
+                      "__typename": "AlbumResponseWrapper",
+                      "data": {
+                        "__typename": "Album",
+                        "uri": "spotify:album:43cDHyzNftlde27nFt8rhV",
+                        "name": "3860",
+                        "coverArt": {
+                          "sources": [
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00001e0280728433011301114b6371ad",
+                              "width": 300,
+                              "height": 300
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d0000485180728433011301114b6371ad",
+                              "width": 64,
+                              "height": 64
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d0000b27380728433011301114b6371ad",
+                              "width": 640,
+                              "height": 640
+                            }
+                          ],
+                          "extractedColors": {
+                            "colorDark": {
+                              "hex": "#717878",
+                              "isFallback": false
+                            }
+                          }
+                        },
+                        "artists": {
+                          "items": [
+                            {
+                              "uri": "spotify:artist:4IprNlQiJZUUJhDl0fL2SL",
+                              "profile": {
+                                "name": "Quando Rondo"
+                              }
+                            },
+                            {
+                              "uri": "spotify:artist:7wlFDEWiM5OoIAt8RSli8b",
+                              "profile": {
+                                "name": "YoungBoy Never Broke Again"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:album:5g4O8fSfK5bfRiDRV0mYhd",
+                    "content": {
+                      "__typename": "AlbumResponseWrapper",
+                      "data": {
+                        "__typename": "Album",
+                        "uri": "spotify:album:5g4O8fSfK5bfRiDRV0mYhd",
+                        "name": "Taurus (feat. Naomi Wild) [From The Motion Picture Taurus]",
+                        "coverArt": {
+                          "sources": [
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00001e027c497fe3dc3a9370c50a54d0",
+                              "width": 300,
+                              "height": 300
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d000048517c497fe3dc3a9370c50a54d0",
+                              "width": 64,
+                              "height": 64
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d0000b2737c497fe3dc3a9370c50a54d0",
+                              "width": 640,
+                              "height": 640
+                            }
+                          ],
+                          "extractedColors": {
+                            "colorDark": {
+                              "hex": "#B85060",
+                              "isFallback": false
+                            }
+                          }
+                        },
+                        "artists": {
+                          "items": [
+                            {
+                              "uri": "spotify:artist:6TIYQ3jFPwQSRmorSezPxX",
+                              "profile": {
+                                "name": "Machine Gun Kelly"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:album:2SWwDDBZG7UfECbPWQ2t4h",
+                    "content": {
+                      "__typename": "AlbumResponseWrapper",
+                      "data": {
+                        "__typename": "Album",
+                        "uri": "spotify:album:2SWwDDBZG7UfECbPWQ2t4h",
+                        "name": "Back To The Game",
+                        "coverArt": {
+                          "sources": [
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00001e027d43a83165d3d237f6463102",
+                              "width": 300,
+                              "height": 300
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d000048517d43a83165d3d237f6463102",
+                              "width": 64,
+                              "height": 64
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d0000b2737d43a83165d3d237f6463102",
+                              "width": 640,
+                              "height": 640
+                            }
+                          ],
+                          "extractedColors": {
+                            "colorDark": {
+                              "hex": "#535353",
+                              "isFallback": true
+                            }
+                          }
+                        },
+                        "artists": {
+                          "items": [
+                            {
+                              "uri": "spotify:artist:3vQ0GE3mI0dAaxIMYe5g7z",
+                              "profile": {
+                                "name": "Paulo Londra"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:album:0ZCiHJtfke9bvbl9U62lrf",
+                    "content": {
+                      "__typename": "AlbumResponseWrapper",
+                      "data": {
+                        "__typename": "Album",
+                        "uri": "spotify:album:0ZCiHJtfke9bvbl9U62lrf",
+                        "name": "Bell Bottom Country",
+                        "coverArt": {
+                          "sources": [
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00001e02be182d511d8ba1df3b621596",
+                              "width": 300,
+                              "height": 300
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00004851be182d511d8ba1df3b621596",
+                              "width": 64,
+                              "height": 64
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d0000b273be182d511d8ba1df3b621596",
+                              "width": 640,
+                              "height": 640
+                            }
+                          ],
+                          "extractedColors": {
+                            "colorDark": {
+                              "hex": "#801830",
+                              "isFallback": false
+                            }
+                          }
+                        },
+                        "artists": {
+                          "items": [
+                            {
+                              "uri": "spotify:artist:6tPHARSq45lQ8BSALCfkFC",
+                              "profile": {
+                                "name": "Lainey Wilson"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "data": null
+                  },
+                  {
+                    "uri": "spotify:album:22yHng7BVvc5LYwomoNnlN",
+                    "content": {
+                      "__typename": "AlbumResponseWrapper",
+                      "data": {
+                        "__typename": "Album",
+                        "uri": "spotify:album:22yHng7BVvc5LYwomoNnlN",
+                        "name": "Dangerous Girls",
+                        "coverArt": {
+                          "sources": [
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d00001e024258ae5a39830a215c6bb21d",
+                              "width": 300,
+                              "height": 300
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d000048514258ae5a39830a215c6bb21d",
+                              "width": 64,
+                              "height": 64
+                            },
+                            {
+                              "url": "https://i.scdn.co/image/ab67616d0000b2734258ae5a39830a215c6bb21d",
+                              "width": 640,
+                              "height": 640
+                            }
+                          ],
+                          "extractedColors": {
+                            "colorDark": {
+                              "hex": "#E81838",
+                              "isFallback": false
+                            }
+                          }
+                        },
+                        "artists": {
+                          "items": [
+                            {
+                              "uri": "spotify:artist:4PNHuWkk4ee6R8WEhFVPf5",
+                              "profile": {
+                                "name": "NoCap"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "data": null
+                  }
+                ],
+                "totalCount": 50
+              }
+            }
+          ],
+          "totalCount": 4
+        }
+      }
+    }
+  },
+  "extensions": {
+    "cacheControl": {
+      "version": 1,
+      "hints": []
+    }
+  }
+}

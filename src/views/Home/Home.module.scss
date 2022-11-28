@@ -1,0 +1,20 @@
+.home-container {
+  background-color: #1e1e1e;
+  overflow-y: scroll;
+
+  .section-container {
+    padding: 30px;
+
+    .section-title {
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    
+    .section-playlists-container {
+      display: flex;
+      flex-wrap: wrap;
+      overflow-x: hidden;
+    }
+  }
+}
