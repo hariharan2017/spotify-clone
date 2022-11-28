@@ -3,18 +3,19 @@ import styles from "./Sidebar.module.scss";
 
 const iconStyle = styles["side-icon-style"];
 
-const sideMenu1 = [
-  { icon: <MdHome className={iconStyle} />, label: "Home"},
-  { icon: <MdSearch className={iconStyle} />, label: "Search"},
-  { icon: <MdLibraryMusic className={iconStyle} />, label: "Your Library"},
-]
-
-const sideMenu2 = [
-  { icon: <MdPlaylistAdd className={iconStyle} />, label: "Create Playlist"},
-  { icon: <MdFavoriteBorder className={iconStyle} />, label: "Liked Songs"},
-]
-
 const Sidebar = () => {
+  
+  const sideMenu1 = [
+    { icon: <MdHome className={iconStyle} />, label: "Home"},
+    { icon: <MdSearch className={iconStyle} />, label: "Search"},
+    { icon: <MdLibraryMusic className={iconStyle} />, label: "Your Library"},
+  ]
+  
+  const sideMenu2 = [
+    { icon: <MdPlaylistAdd className={iconStyle} />, label: "Create Playlist"},
+    { icon: <MdFavoriteBorder className={iconStyle} />, label: "Liked Songs"},
+  ]
+
   return (
     <div className={styles["sidebar-container"]}>
       <div className={styles["title-container"]}>

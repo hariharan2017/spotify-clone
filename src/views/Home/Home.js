@@ -3,29 +3,28 @@ import Card from "../../components/Card";
 import styles from "./Home.module.scss";
 
 const Home = () => {
-  const { sections } = (HomeData.data.home.sectionContainer);
-  const { data, sectionItems } = (sections.items[0]);
+  const { sections } = HomeData.data.home.sectionContainer;
 
   return (
     <div className={styles["home-container"]}>
-      <div className={styles["section-container"]}>
-        <div className={styles["section-title"]}>{data?.title?.text}</div>
-        <div className={styles["section-playlists-container"]}>
-          {sectionItems?.items?.map((item) => {
-            const img = item?.content?.data?.images?.items?.[0]?.sources?.[0]?.url;
-            const title = item?.content?.data?.name;
-            const desc = item?.content?.data?.description;
+      {sections.items.map((section) => {
+        return (
+          <div className={styles["section-container"]}>
+            <div className={styles["section-title"]}>{section?.data?.title?.text}</div>
+            <div className={styles["section-playlists-container"]}>
+              {section?.sectionItems?.items?.map((item) => {
+                const img = item?.content?.data?.images?.items?.[0]?.sources?.[0]?.url || item?.content?.data?.coverArt?.sources?.[0]?.url;
+                const title = item?.content?.data?.name;
+                const desc = item?.content?.data?.description || item?.content?.data?.artists?.items?.[0]?.profile?.name;
 
-            return (
-              <div>
-                <Card img={img} title={title} desc={desc} />
-              </div>
-            )
-          })}
-        </div>
-      </div>
+                return <Card img={img} title={title} desc={desc} />;
+              })}
+            </div>
+          </div>
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
 export default Home;
