@@ -1,0 +1,32 @@
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(19 18 18);
+  color: white;
+  height: 64px;
+  padding: 0 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  .topbar-icons-container {
+    display: flex;
+
+    > span {
+      margin-left: 20px;
+    }
+
+    .icon-parent-styles {
+      background-color: rgba(0,0,0,.7);
+      color: #b3b3b3;
+      border: none;
+      border-radius: 50%;
+
+      .topbar-icon-styles {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+}
