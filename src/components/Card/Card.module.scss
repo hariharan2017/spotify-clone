@@ -1,0 +1,35 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  padding: 15px;
+  background-color: #1b1b1b;
+  height: 250px;
+  border-radius: 1rem;
+
+  .card-image {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+  }
+
+  .card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0;
+  }
+
+  .card-desc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #8f8e8e;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &:hover {
+    transition: 0.25s ease-in;
+    background-color: rgba(54, 54, 54, 0.612)
+  }
+}
