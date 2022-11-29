@@ -26,7 +26,7 @@ const Sidebar = () => {
         <div className={styles["side-menu-1-container"]}>
           {sideMenu1.map((item) => {
             return (
-              <div className={styles["side-menu-icon-container"]}>
+              <div className={styles["side-menu-icon-container"]} key={item.label}>
                 {item.icon}
                 <span className={styles["side-icon-label"]}>{item.label}</span>
               </div>
@@ -36,7 +36,7 @@ const Sidebar = () => {
         <div className={styles["side-menu-2-container"]}>
           {sideMenu2.map((item) => {
             return (
-              <div className={styles["side-menu-icon-container"]}>
+              <div className={styles["side-menu-icon-container"]} key={item.label}>
                 {item.icon}
                 <span className={styles["side-icon-label"]}>{item.label}</span>
               </div>

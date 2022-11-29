@@ -9,7 +9,7 @@ const Home = () => {
     <div className={styles["home-container"]}>
       {sections.items.map((section) => {
         return (
-          <div className={styles["section-container"]}>
+          <div className={styles["section-container"]} key={section?.uri}>
             <div className={styles["section-title"]}>{section?.data?.title?.text}</div>
             <div className={styles["section-playlists-container"]}>
               {section?.sectionItems?.items?.map((item) => {
@@ -17,7 +17,7 @@ const Home = () => {
                 const title = item?.content?.data?.name;
                 const desc = item?.content?.data?.description || item?.content?.data?.artists?.items?.[0]?.profile?.name;
 
-                return <Card img={img} title={title} desc={desc} />;
+                return <Card key={item?.uri} img={img} title={title} desc={desc} />;
               })}
             </div>
           </div>
