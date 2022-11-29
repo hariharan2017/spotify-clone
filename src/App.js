@@ -1,13 +1,14 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
-import Topbar from "./components/Topbar";
-import Home from "./views/Home";
-import styles from "./App.module.scss";
 import { getTokenFromUrl } from "./helpers/auth";
 import { actions as authActions } from "./store/auth";
 import { actions as spotifyActions } from "./store/spotify";
+import Sidebar from "./components/Sidebar";
+import Topbar from "./components/Topbar";
+import Home from "./views/Home";
+import Playlist from "./views/Playlist";
+import styles from "./App.module.scss";
 import SpotifyWebApi from "spotify-web-api-js";
 
 const spotify = new SpotifyWebApi();
@@ -41,6 +42,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/playlist/:playlistId" element={<Layout><Playlist /></Layout>} />
       </Routes>
     </BrowserRouter>
   );

@@ -9,3 +9,6 @@ export const GET_CURRENT_USER_PLAYLISTS = "/me/playlists";
 //Categories
 export const GET_SEVERAL_BROWSE_CATEGORIES = "/browse/categories";
 export const GET_SINGLE_BROWSE_CATEGORY = "/browse/categories/{category_id}";
+
+//Playlists
+export const GET_PLAYLIST = "/playlists/{playlist_id}";
