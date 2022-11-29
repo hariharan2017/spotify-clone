@@ -4,7 +4,7 @@ import { store } from "../store/configureStore";
 
 const secureAxios = axios.create({ baseURL: BASE_API_URL });
 secureAxios.interceptors.request.use((config) => {
-  config.headers[AUTHORIZATION_HEADER] = `Bearer ${store?.getState()?.auth?.token}`;
+  config.headers[AUTHORIZATION_HEADER] = `Bearer ${store?.getState()?.authentication?.auth?.token}`;
   return config;
 });
 

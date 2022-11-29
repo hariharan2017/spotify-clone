@@ -1,20 +1,25 @@
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { accessUrl } from "../../helpers/spotify";
-import { useSelector } from "react-redux";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { actions as authActions } from "../../store/auth";
 import Button from "../Button";
 import styles from "./Topbar.module.scss";
-import { useEffect } from "react";
 
 const Topbar = () => {
-
-  const spotifyWrapper = useSelector(state => state.spotify.wrapper);
+  const dispatch = useDispatch();
+  const auth = useSelector(state => state.authentication.auth);
+  const profile = useSelector(state => state.authentication.profile.details)
 
   useEffect(() => {
-    console.log(spotifyWrapper);
-    spotifyWrapper?.getMe().then((res) => {
-      console.log(res);
-    });
-  }, [spotifyWrapper])
+    if(auth?.token) {
+      dispatch(authActions.fetchUserDetails());
+    }
+  }, [JSON.stringify(auth)]);
+
+  const handleLogout = () => {
+    dispatch(authActions.logOut());
+  };
 
   return (
     <div className={styles["topbar-container"]}>
@@ -22,10 +27,15 @@ const Topbar = () => {
         <span className={styles["icon-parent-styles"]}><MdChevronLeft className={styles["topbar-icon-styles"]} /></span>
         <span className={styles["icon-parent-styles"]}><MdChevronRight className={styles["topbar-icon-styles"]} /></span>
       </div>
-      <div className={styles["topbar-buttons-container"]}>
+      {!auth?.loggedIn && <div className={styles["topbar-buttons-container"]}>
         <Button type={"secondary"}>Sign Up</Button>
         <a href={accessUrl}><Button type={"primary"} >Log In</Button></a>
-      </div>
+      </div>}
+      {auth?.loggedIn && <div className={styles["profile-container"]}>
+        <img className={styles["profile-image"]} src={profile?.images?.[0]?.url} alt="Profile Image"/>
+        <label className={styles["profile-name"]}>{profile?.["display_name"]}</label>
+        <div style={{ padding: "10px", cursor: "pointer" }} onClick={handleLogout}>Logout</div>
+      </div>}
     </div>
   )
 };

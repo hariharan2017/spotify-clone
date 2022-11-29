@@ -5,6 +5,6 @@ import { reducers as spotfiyReducers } from "./spotify";
 
 export default combineReducers({
   test: testReducers,
-  auth: authReducers,
+  authentication: authReducers,
   spotify: spotfiyReducers,
 });
