@@ -6,7 +6,11 @@ import Topbar from "./components/Topbar";
 import Home from "./views/Home";
 import styles from "./App.module.scss";
 import { getTokenFromUrl } from "./helpers/auth";
-import { actions } from "./store/auth";
+import { actions as authActions } from "./store/auth";
+import { actions as spotifyActions } from "./store/spotify";
+import SpotifyWebApi from "spotify-web-api-js";
+
+const spotify = new SpotifyWebApi();
 
 const Layout = ({ children }) => {
   return (
@@ -26,7 +30,9 @@ function App() {
   useEffect(() => {
     const token = (getTokenFromUrl(window.location.hash));
     if(token) {
-      dispatch(actions.storeToken(token));
+      dispatch(authActions.storeToken(token));
+      spotify.setAccessToken(token);
+      dispatch(spotifyActions.storeSpotify(spotify));
     }
     window.location.hash = "";
   }, []);

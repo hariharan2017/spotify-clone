@@ -15,7 +15,8 @@
     "redux": "^4.2.0",
     "redux-saga": "^1.2.1",
     "sass": "^1.56.1",
-    "sass-loader": "^13.2.0"
+    "sass-loader": "^13.2.0",
+    "spotify-web-api-js": "^1.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
