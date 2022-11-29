@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import styles from "./Button.module.scss";
 
-const Button = ({ type, children }) => {
+const Button = ({ type, children, onClick }) => {
   
   const getButtonStyle = (type) => {
     if (type === "primary") {
@@ -12,7 +12,7 @@ const Button = ({ type, children }) => {
   }
   
   return (
-    <button className={styles[getButtonStyle(type)]}>{children}</button>
+    <button className={styles[getButtonStyle(type)]} onClick={onClick}>{children}</button>
   )
 }
 
