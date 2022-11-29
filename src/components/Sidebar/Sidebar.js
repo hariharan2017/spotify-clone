@@ -1,9 +1,11 @@
+import { useSelector } from "react-redux";
 import { MdWaves, MdHome, MdSearch, MdLibraryMusic, MdPlaylistAdd, MdFavoriteBorder } from "react-icons/md";
 import styles from "./Sidebar.module.scss";
 
 const iconStyle = styles["side-icon-style"];
 
 const Sidebar = () => {
+  const currPlaylists = useSelector(state => state.data.userPlaylists.currentUserPlaylists);
   
   const sideMenu1 = [
     { icon: <MdHome className={iconStyle} />, label: "Home"},
@@ -43,6 +45,12 @@ const Sidebar = () => {
             )
           })}
         </div>
+      </div>
+      {!!currPlaylists?.items && <div className={styles["sidebar-divider"]} />}
+      <div className={styles["playlist-items"]}>
+        {currPlaylists?.items?.map((item) => {
+          return <div className={styles["playlist-row-item"]}>{item?.name}</div>
+        })}
       </div>
     </div>
   )

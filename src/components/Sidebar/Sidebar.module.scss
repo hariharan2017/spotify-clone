@@ -59,3 +59,24 @@
 .side-menu-2-container {
   margin-top: 20px;
 }
+
+.sidebar-divider {
+  background-color: grey;
+  height: 0.5px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.playlist-items {
+  overflow-y: scroll;
+
+  .playlist-row-item {
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin: 0.85rem 0;
+  }
+
+  :hover {
+    color: white;
+  }
+}

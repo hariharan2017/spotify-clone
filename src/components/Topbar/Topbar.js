@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { accessUrl } from "../../helpers/spotify";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { actions as authActions } from "../../store/auth";
+import { actions as dataActions } from "../../store/data";
 import Button from "../Button";
 import styles from "./Topbar.module.scss";
 
@@ -14,6 +15,7 @@ const Topbar = () => {
   useEffect(() => {
     if(auth?.token) {
       dispatch(authActions.fetchUserDetails());
+      dispatch(dataActions.getUserPlaylists());
     }
   }, [JSON.stringify(auth)]);
 
