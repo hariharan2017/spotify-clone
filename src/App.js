@@ -1,11 +1,12 @@
-import { store } from "./store/configureStore";
-import { Provider } from "react-redux";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Topbar from "./components/Topbar";
 import Home from "./views/Home";
-import Login from "./views/Login";
 import styles from "./App.module.scss";
+import { getTokenFromUrl } from "./helpers/auth";
+import { actions } from "./store/auth";
 
 const Layout = ({ children }) => {
   return (
@@ -20,15 +21,22 @@ const Layout = ({ children }) => {
 };
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const token = (getTokenFromUrl(window.location.hash));
+    if(token) {
+      dispatch(actions.storeToken(token));
+    }
+    window.location.hash = "";
+  }, []);
+
   return (
-    <Provider store={store}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Layout><Home /></Layout>} />
-        </Routes>
-      </BrowserRouter>
-    </Provider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout><Home /></Layout>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
