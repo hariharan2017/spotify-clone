@@ -19,12 +19,9 @@ export const getPlayListDataSuccess = (playlistData) => ({
   playlistData,
 });
 
-export const selectSong = (songUri) => ({
+export const selectSong = (songUri, songUrl, song) => ({
   type: actionTypes.SELECT_SONG,
-  songUri
-});
-
-export const fetchSong = (songUri) => ({
-  type: actionTypes.FETCH_SONG,
-  songUri
+  songUri,
+  songUrl,
+  song
 });

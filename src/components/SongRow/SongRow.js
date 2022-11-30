@@ -10,7 +10,7 @@ const SongRow = ({ song, index }) => {
   const songData = useSelector(state => state.data.song);
 
   const handleRowClick = () => {
-    dispatch(dataActions.selectSong(song?.track?.uri))
+    dispatch(dataActions.selectSong(song?.track?.uri, song?.track?.["preview.url"], song));
   }
 
   return (
