@@ -1,0 +1,42 @@
+$row-number: 0.03;
+$row-title: 0.4;
+$row-album: 0.3;
+$row-date-added: 0.15;
+$row-duration: 0.12;
+
+.song-row-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+
+  .song-number {
+    flex: $row-number;
+  }
+
+  .song-details {
+    display: flex;
+    flex: $row-title;
+    align-items: center;
+
+    .song-text {
+      padding-left: 1rem;
+    }
+  }
+
+  .song-album {
+    flex: $row-album;
+  }
+
+  .song-date-added {
+    flex: $row-date-added;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .song-duration {
+    justify-content: flex-end;
+    flex: $row-duration;
+    text-align: end;
+    padding-right: 3rem;
+  }
+}
