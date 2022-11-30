@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { getTokenFromUrl } from "./helpers/auth";
 import { actions as authActions } from "./store/auth";
@@ -10,6 +10,7 @@ import Home from "./views/Home";
 import Playlist from "./views/Playlist";
 import styles from "./App.module.scss";
 import SpotifyWebApi from "spotify-web-api-js";
+import Player from "./components/Player";
 
 const spotify = new SpotifyWebApi();
 
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
         <Topbar />
         {children}
       </div>
+      <Player />
     </div>
   );
 };
