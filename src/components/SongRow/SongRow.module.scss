@@ -7,7 +7,7 @@ $row-duration: 0.12;
 .song-row-container {
   display: flex;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
 
   .song-number {
     flex: $row-number;
@@ -18,13 +18,27 @@ $row-duration: 0.12;
     flex: $row-title;
     align-items: center;
 
+    .song-image {
+      height: 40px;
+      width: 40px;
+      object-fit: contain;
+    }
+
     .song-text {
       padding-left: 1rem;
+
+      .song-title {
+        color: white;
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+      }
     }
   }
 
   .song-album {
     flex: $row-album;
+    padding-left: 1rem;
+    font-size: 1rem;
   }
 
   .song-date-added {
@@ -38,5 +52,13 @@ $row-duration: 0.12;
     flex: $row-duration;
     text-align: end;
     padding-right: 3rem;
+  }
+
+  &:hover {
+    background-color: hsla(0,0%,100%,.1);
+
+    .song-artist, .song-album {
+      color: white;
+    }
   }
 }
