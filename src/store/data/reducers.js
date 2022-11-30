@@ -20,6 +20,21 @@ const playlistReducer = (state, action) => {
   }
 };
 
+const songReducer = (state, action) => {
+  state = state || { currentSong: null }
+
+  switch (action.type) {
+    case actionTypes.SELECT_SONG:
+      return {
+        ...state,
+        currentSong: action.songUri
+      }
+    default:
+      return state;
+  }
+}
+
 export default combineReducers({
   userPlaylists: playlistReducer,
+  song: songReducer
 });

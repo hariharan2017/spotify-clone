@@ -11,12 +11,15 @@ $row-duration: 0.12;
 
   .song-number {
     flex: $row-number;
+    font-size: 1rem;
+    padding-left: 0.5rem;
   }
 
   .song-details {
     display: flex;
     flex: $row-title;
     align-items: center;
+    padding: 5px;
 
     .song-image {
       height: 40px;
@@ -55,10 +58,25 @@ $row-duration: 0.12;
   }
 
   &:hover {
+    background-clip: content-box;
     background-color: hsla(0,0%,100%,.1);
 
     .song-artist, .song-album {
       color: white;
+    }
+  }
+}
+
+.selected {
+  .song-number {
+    color: #1db954;
+  }
+
+  .song-details {
+    .song-text {
+      .song-title {
+        color: #1db954;
+      }
     }
   }
 }

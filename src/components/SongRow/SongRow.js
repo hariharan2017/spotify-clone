@@ -1,9 +1,20 @@
+import { useDispatch, useSelector } from "react-redux"
 import { getDaysAgo, showDisplayDuration } from "../../helpers/methods";
+import { actions as dataActions } from "../../store/data";
+import classNames from "classnames";
 import styles from "./SongRow.module.scss";
 
 const SongRow = ({ song, index }) => {
+  const dispatch = useDispatch();
+
+  const songData = useSelector(state => state.data.song);
+
+  const handleRowClick = () => {
+    dispatch(dataActions.selectSong(song?.track?.uri))
+  }
+
   return (
-    <div className={styles["song-row-container"]}>
+    <div className={classNames(styles["song-row-container"], songData.currentSong == song?.track?.uri ? styles["selected"] : null)} onClick={handleRowClick}>
       <div className={styles["song-number"]}>{index + 1}</div>
       <div className={styles["song-details"]}>
         <img className={styles["song-image"]} src={song?.track?.album?.images?.[2]?.url} />
