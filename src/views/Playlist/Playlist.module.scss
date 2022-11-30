@@ -1,14 +1,20 @@
+$row-number: 0.03;
+$row-title: 0.4;
+$row-album: 0.3;
+$row-date-added: 0.15;
+$row-duration: 0.12;
+
 .playlist-container {
+  overflow-y: scroll;
 
   .banner-container {
     display: flex;
-    background: rgb(40,56,72);
-    background: linear-gradient(180deg, rgba(40,56,72,1) 0%, rgba(20,20,43,1) 35%, rgba(40,56,72,1) 100%);
+    background: rgb(40, 56, 72);
+    background: linear-gradient(180deg, rgba(40, 56, 72, 1) 0%, rgba(20, 20, 43, 1) 35%, rgba(40, 56, 72, 1) 100%);
     padding: 1rem;
     align-items: flex-end;
 
     .image-container {
-
       .playlist-banner-image {
         height: 15rem;
         width: 15rem;
@@ -58,7 +64,6 @@
         }
 
         .banner-footer-duration {
-
         }
 
         .banner-footer-spacer {
@@ -66,5 +71,49 @@
         }
       }
     }
+  }
+}
+
+.songs-container {
+  background-color: rgb(32, 32, 32);
+  color: #b3b3b3;
+  font-size: 14px;
+
+  .table-header-container {
+    display: flex;
+    background-color: rgb(32, 32, 32);
+    border-bottom: 0.1px solid grey;
+    padding-bottom: 0.5rem;
+    position: sticky;
+    top: 0;
+    padding: 1rem 3rem;
+  }
+
+  .table-header {
+    text-transform: uppercase;
+  }
+
+  .table-header:nth-child(1) {
+    flex: $row-number;
+  }
+
+  .table-header:nth-child(2) {
+    flex: $row-title;
+  }
+
+  .table-header:nth-child(3) {
+    flex: $row-album;
+  }
+
+  .table-header:nth-child(4) {
+    flex: $row-date-added;
+    text-align: center;
+  }
+
+  .table-header:nth-child(5) {
+    justify-content: flex-end;
+    flex: $row-duration;
+    text-align: end;
+    padding-right: 3rem;
   }
 }

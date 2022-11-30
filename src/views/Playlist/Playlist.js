@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import SongRow from "../../components/SongRow/SongRow";
 import { actions as dataActions } from "../../store/data";
 import styles from "./Playlist.module.scss";
 
@@ -34,6 +35,18 @@ const Playlist = () => {
             <div className={styles["banner-footer-duration"]}></div>
           </div>
         </div>
+      </div>
+      <div className={styles["songs-container"]}>
+        <div className={styles["table-header-container"]}>
+          <div className={styles["table-header"]}>#</div>
+          <div className={styles["table-header"]}>Title</div>
+          <div className={styles["table-header"]}>Album</div>
+          <div className={styles["table-header"]}>Date Added</div>
+          <div className={styles["table-header"]}>Duration</div>
+        </div>
+        {selectedPlaylist?.tracks?.items?.map?.((song, index) => {
+          return <SongRow key={song?.track?.uri} song={song} index={index} />
+        })}
       </div>
     </div>
   )
