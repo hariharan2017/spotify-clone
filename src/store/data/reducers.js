@@ -21,7 +21,7 @@ const playlistReducer = (state, action) => {
 };
 
 const songReducer = (state, action) => {
-  state = state || { currentSong: null, songUrl: null, song: null }
+  state = state || { currentSong: null, songUrl: null, song: null, showPlayer: false }
 
   switch (action.type) {
     case actionTypes.SELECT_SONG:
@@ -29,7 +29,13 @@ const songReducer = (state, action) => {
         ...state,
         currentSong: action.songUri,
         songUrl: action.songUrl,
-        song: action.song
+        song: action.song,
+        showPlayer: true
+      }
+    case actionTypes.CLOSE_PLAYER:
+      return {
+        ...state,
+        showPlayer: false
       }
     default:
       return state;

@@ -25,3 +25,7 @@ export const selectSong = (songUri, songUrl, song) => ({
   songUrl,
   song
 });
+
+export const closePlayer = () => ({
+  type: actionTypes.CLOSE_PLAYER
+});

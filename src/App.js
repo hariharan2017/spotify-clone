@@ -15,6 +15,8 @@ import Player from "./components/Player";
 const spotify = new SpotifyWebApi();
 
 const Layout = ({ children }) => {
+  const songData = useSelector(state => state.data.song);
+
   return (
     <div className={styles["app-container"]}>
       <Sidebar />
@@ -22,7 +24,7 @@ const Layout = ({ children }) => {
         <Topbar />
         {children}
       </div>
-      <Player />
+      {songData.showPlayer && <Player />}
     </div>
   );
 };
