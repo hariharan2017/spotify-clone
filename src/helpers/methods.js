@@ -4,6 +4,12 @@ export const replaceUrlParam = (original = "", replacer) => {
   return original.replace(original.substring(firstIndex, lastIndex+1), replacer);
 }
 
+export const getUri = (uri) => {
+  const splitItems = uri?.split(":") || [];
+  //uris are like spotify:album:id
+  return splitItems?.[2] || null;
+}
+
 export const showMinSecsDuration = (ms) => {
   const minutes = Math.floor(ms / 60000);
   const seconds = ((ms % 60000) / 1000).toFixed(0);

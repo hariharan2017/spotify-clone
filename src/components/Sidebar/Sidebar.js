@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { MdWaves, MdHome, MdSearch, MdLibraryMusic, MdPlaylistAdd, MdFavoriteBorder } from "react-icons/md";
+import { getUri } from "../../helpers/methods";
 import styles from "./Sidebar.module.scss";
 
 const iconStyle = styles["side-icon-style"];
@@ -21,8 +22,7 @@ const Sidebar = () => {
   ]
 
   const handlePlaylistItem = (item) => {
-    const splitItems = item?.uri?.split(":");
-    navigate(`/playlist/${splitItems[2]}`);
+    navigate(`/playlist/${getUri(item?.uri)}`);
   }
 
   return (
