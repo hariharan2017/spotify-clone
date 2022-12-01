@@ -7,3 +7,6 @@ export const FETCH_PLAYLIST_DATA_SUCCESS = "FETCH_PLAYLIST_DATA_SUCCESS";
 export const SELECT_SONG = "SELECT_SONG";
 
 export const CLOSE_PLAYER = "CLOSE_PLAYER";
+
+export const PLAY_SONG = "PLAY_SONG";
+export const PAUSE_SONG = "PAUSE_SONG";

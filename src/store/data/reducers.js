@@ -21,7 +21,7 @@ const playlistReducer = (state, action) => {
 };
 
 const songReducer = (state, action) => {
-  state = state || { currentSong: null, songUrl: null, song: null, showPlayer: false }
+  state = state || { currentSong: null, songUrl: null, song: null };
 
   switch (action.type) {
     case actionTypes.SELECT_SONG:
@@ -29,8 +29,31 @@ const songReducer = (state, action) => {
         ...state,
         currentSong: action.songUri,
         songUrl: action.songUrl,
-        song: action.song,
+        song: action.song
+      }
+    default:
+      return state;
+  }
+}
+
+const playerReducer = (state, action) => {
+  state = state || { showPlayer: false, isPlaying: false };
+
+  switch (action.type) {
+    case actionTypes.SELECT_SONG:
+      return {
+        ...state,
         showPlayer: true
+      }
+    case actionTypes.PLAY_SONG:
+      return {
+        ...state,
+        isPlaying: true
+      }
+    case actionTypes.PAUSE_SONG:
+      return {
+        ...state,
+        isPlaying: false
       }
     case actionTypes.CLOSE_PLAYER:
       return {
@@ -44,5 +67,6 @@ const songReducer = (state, action) => {
 
 export default combineReducers({
   userPlaylists: playlistReducer,
-  song: songReducer
+  song: songReducer,
+  player: playerReducer
 });

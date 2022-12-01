@@ -1,35 +1,60 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { MdFavorite, MdShuffle, MdSkipPrevious, MdOutlinePlayCircle, MdSkipNext, MdOutlineRepeat, MdOutlineVolumeUp, MdOutlineVolumeOff, MdOutlineClose } from "react-icons/md";
+import { MdFavorite, MdShuffle, MdSkipPrevious, MdPlayCircleOutline, MdSkipNext, MdOutlineRepeat, MdOutlineVolumeUp, MdOutlineVolumeOff, MdOutlineClose, MdPauseCircleOutline } from "react-icons/md";
 import { actions as dataActions } from "../../store/data";
 import styles from "./Player.module.scss";
+
+const medFont = "1.75rem";
+const bigFont = "2.5rem";
 
 const Player = () => {
   const dispatch = useDispatch();
   const songData = useSelector(state => state.data.song);
+  const player = useSelector(state => state.data.player);
 
-  const audioRef = useRef(null)
+  const audioRef = useRef(null);
   
   useEffect(() => {
     if(audioRef.current && songData?.song?.track?.["preview_url"]) {
       audioRef.current.pause();
       audioRef.current = new Audio(songData?.song?.track?.["preview_url"]);
+      dispatch(dataActions.playSong());
       audioRef.current.play();
     } else {
       audioRef.current = new Audio(songData?.song?.track?.["preview_url"]);
+      dispatch(dataActions.playSong());
       audioRef.current.play();
     }
 
     return () => {
       if(audioRef.current) {
+        dispatch(dataActions.pauseSong());
         audioRef.current.pause();
       }
     }
-  }, [songData]);
+  }, [JSON.stringify(songData)]);
 
   const handleClose = () => {
     dispatch(dataActions.closePlayer());
-  }
+  };
+
+  const playSong = () => {
+    dispatch(dataActions.playSong());
+    audioRef.current?.play();
+  };
+
+  const pauseSong = () => {
+    dispatch(dataActions.pauseSong());
+    audioRef.current?.pause();
+  };
+
+  const prevSong = () => {
+
+  };
+
+  const nextSong = () => {
+
+  };
 
   return (
     <div className={styles["player-container"]}>
@@ -43,11 +68,11 @@ const Player = () => {
       </div>
       <div className={styles["player-controls"]}>
         <div>
-          <MdShuffle />
-          <MdSkipPrevious />
-          <MdOutlinePlayCircle />
-          <MdSkipNext />
-          <MdOutlineRepeat />
+          <MdShuffle fontSize={medFont} />
+          <MdSkipPrevious fontSize={medFont} onClick={prevSong} />
+          {player.isPlaying ? <MdPauseCircleOutline onClick={pauseSong} fontSize={bigFont} /> : <MdPlayCircleOutline onClick={playSong} fontSize={bigFont}/> }
+          <MdSkipNext fontSize={medFont} />
+          <MdOutlineRepeat fontSize={medFont} onClick={nextSong} />
         </div>
         <div>
           Progress Bar

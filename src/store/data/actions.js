@@ -29,3 +29,11 @@ export const selectSong = (songUri, songUrl, song) => ({
 export const closePlayer = () => ({
   type: actionTypes.CLOSE_PLAYER
 });
+
+export const playSong = () => ({
+  type: actionTypes.PLAY_SONG
+});
+
+export const pauseSong = () => ({
+  type: actionTypes.PAUSE_SONG
+});
