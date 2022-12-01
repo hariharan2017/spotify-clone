@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import SongRow from "../../components/SongRow/SongRow";
@@ -16,10 +16,15 @@ const Playlist = () => {
     dispatch(dataActions.getPlaylistData(playlistId));
   }, [playlistId])
 
-  let totalTime = 0;
-  selectedPlaylist?.tracks?.items?.forEach((item) => {
-    totalTime += item?.track?.duration_ms || 0;
-  });
+  const calculateDuration = (selectedPlaylist) => {
+    let totalTime = 0;
+    selectedPlaylist?.tracks?.items?.forEach((item) => {
+      totalTime += item?.track?.duration_ms || 0;
+    });
+    return totalTime;
+  };
+
+  const duration = useMemo(() => calculateDuration(selectedPlaylist), [selectedPlaylist]);
 
   return (
     <div className={styles["playlist-container"]}>
@@ -38,7 +43,7 @@ const Playlist = () => {
             <div className={styles["banner-footer-spacer"]}>.</div>
             <div className={styles["banner-footer-songs"]}>{selectedPlaylist?.tracks?.total} songs</div>
             <div className={styles["banner-footer-spacer"]}>.</div>
-            <div className={styles["banner-footer-duration"]}>{showHrMinsDuration(totalTime)}</div>
+            <div className={styles["banner-footer-duration"]}>{showHrMinsDuration(duration)}</div>
           </div>
         </div>
       </div>
