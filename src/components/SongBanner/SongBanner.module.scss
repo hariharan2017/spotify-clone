@@ -1,0 +1,50 @@
+.banner-text-container {
+  padding: 1rem;
+  color: white;
+
+  .banner-text-type {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .banner-text-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner-text-desc {
+    color: #b3b3b3;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .banner-footer-container {
+    display: flex;
+    align-items: center;
+
+    .banner-footer-owner {
+      font-size: 0.8125rem;
+      font-weight: 700;
+    }
+
+    .banner-footer-likes {
+      font-size: 0.8125rem;
+      font-weight: 700;
+    }
+
+    .banner-footer-songs {
+      font-size: 0.8125rem;
+      font-weight: 700;
+    }
+
+    .banner-footer-duration {
+      color: hsla(0, 0%, 100%, .7);
+    }
+
+    .banner-footer-spacer {
+      padding: 0 10px 10px;
+    }
+  }
+}
