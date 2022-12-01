@@ -1,9 +1,9 @@
 import { useEffect, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import SongRow from "../../components/SongRow/SongRow";
-import { showHrMinsDuration } from "../../helpers/methods";
 import { actions as dataActions } from "../../store/data";
+import SongBanner from "../../components/SongBanner";
+import SongRow from "../../components/SongRow";
 import styles from "./Playlist.module.scss";
 
 const Playlist = () => {
@@ -26,26 +26,23 @@ const Playlist = () => {
 
   const duration = useMemo(() => calculateDuration(selectedPlaylist), [selectedPlaylist]);
 
+  const bannerProps = {
+    type: selectedPlaylist?.type,
+    name: selectedPlaylist?.name,
+    description: selectedPlaylist?.description,
+    owner: selectedPlaylist?.owner?.display_name,
+    followers: selectedPlaylist?.followers?.total?.toLocaleString('en-US') + " likes",
+    totalTracks: selectedPlaylist?.tracks?.total + " songs",
+    duration
+  }
+
   return (
     <div className={styles["playlist-container"]}>
       <div className={styles["banner-container"]}>
         <div className={styles["image-container"]}>
           <img className={styles["playlist-banner-image"]} src={selectedPlaylist?.images?.[0]?.url} alt={selectedPlaylist?.name}/>
         </div>
-        <div className={styles["banner-text-container"]}>
-          <div className={styles["banner-text-type"]}>{selectedPlaylist?.type}</div>
-          <div className={styles["banner-text-title"]}>{selectedPlaylist?.name}</div>
-          <div className={styles["banner-text-desc"]}>{selectedPlaylist?.description}</div>
-          <div className={styles["banner-footer-container"]}>
-            <div className={styles["banner-footer-owner"]}>{selectedPlaylist?.owner?.["display_name"]}</div>
-            <div className={styles["banner-footer-spacer"]}>.</div>
-            <div className={styles["banner-footer-likes"]}>{selectedPlaylist?.followers?.total?.toLocaleString('en-US')} likes</div>
-            <div className={styles["banner-footer-spacer"]}>.</div>
-            <div className={styles["banner-footer-songs"]}>{selectedPlaylist?.tracks?.total} songs</div>
-            <div className={styles["banner-footer-spacer"]}>.</div>
-            <div className={styles["banner-footer-duration"]}>{showHrMinsDuration(duration)}</div>
-          </div>
-        </div>
+        <SongBanner {...bannerProps} />
       </div>
       <div className={styles["songs-container"]}>
         <div className={styles["table-header-container"]}>
