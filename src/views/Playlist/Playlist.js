@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import SongRow from "../../components/SongRow/SongRow";
+import { showHrMinsDuration } from "../../helpers/methods";
 import { actions as dataActions } from "../../store/data";
 import styles from "./Playlist.module.scss";
 
@@ -14,6 +15,11 @@ const Playlist = () => {
   useEffect(() => {
     dispatch(dataActions.getPlaylistData(playlistId));
   }, [playlistId])
+
+  let totalTime = 0;
+  selectedPlaylist?.tracks?.items?.forEach((item) => {
+    totalTime += item?.track?.duration_ms || 0;
+  });
 
   return (
     <div className={styles["playlist-container"]}>
@@ -28,11 +34,11 @@ const Playlist = () => {
           <div className={styles["banner-footer-container"]}>
             <div className={styles["banner-footer-owner"]}>{selectedPlaylist?.owner?.["display_name"]}</div>
             <div className={styles["banner-footer-spacer"]}>.</div>
-            <div className={styles["banner-footer-likes"]}>{selectedPlaylist?.followers?.total} likes</div>
+            <div className={styles["banner-footer-likes"]}>{selectedPlaylist?.followers?.total?.toLocaleString('en-US')} likes</div>
             <div className={styles["banner-footer-spacer"]}>.</div>
             <div className={styles["banner-footer-songs"]}>{selectedPlaylist?.tracks?.total} songs</div>
             <div className={styles["banner-footer-spacer"]}>.</div>
-            <div className={styles["banner-footer-duration"]}></div>
+            <div className={styles["banner-footer-duration"]}>{showHrMinsDuration(totalTime)}</div>
           </div>
         </div>
       </div>

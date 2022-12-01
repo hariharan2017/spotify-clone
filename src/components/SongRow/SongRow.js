@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { getDaysAgo, showDisplayDuration } from "../../helpers/methods";
+import { getDaysAgo, showMinSecsDuration } from "../../helpers/methods";
 import { actions as dataActions } from "../../store/data";
 import classNames from "classnames";
 import styles from "./SongRow.module.scss";
@@ -25,7 +25,7 @@ const SongRow = ({ song, index }) => {
       </div>
       <div className={styles["song-album"]}>{song?.track?.album?.name}</div>
       <div className={styles["song-date-added"]}>{getDaysAgo(song?.["added_at"])}</div>
-      <div className={styles["song-duration"]}>{showDisplayDuration(song?.track?.["duration_ms"])}</div>
+      <div className={styles["song-duration"]}>{showMinSecsDuration(song?.track?.["duration_ms"])}</div>
     </div>
   );
 };
