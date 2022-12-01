@@ -41,6 +41,10 @@
     justify-content: center;
     align-items: center;
     flex: 0.5;
+
+    .icons-container > svg {
+      margin: 0 0.5rem
+    }
   }
 
   .volume-controls {

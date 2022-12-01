@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MdFavorite, MdShuffle, MdSkipPrevious, MdPlayCircleOutline, MdSkipNext, MdOutlineRepeat, MdOutlineVolumeUp, MdOutlineVolumeOff, MdOutlineClose, MdPauseCircleOutline } from "react-icons/md";
 import { actions as dataActions } from "../../store/data";
@@ -6,6 +6,7 @@ import styles from "./Player.module.scss";
 
 const medFont = "1.75rem";
 const bigFont = "2.5rem";
+const iconColor = "grey";
 
 const Player = () => {
   const dispatch = useDispatch();
@@ -67,19 +68,19 @@ const Player = () => {
         <MdFavorite />
       </div>
       <div className={styles["player-controls"]}>
-        <div>
-          <MdShuffle fontSize={medFont} />
-          <MdSkipPrevious fontSize={medFont} onClick={prevSong} />
+        <div className={styles["icons-container"]}>
+          <MdShuffle fontSize={medFont} color={iconColor}  />
+          <MdSkipPrevious fontSize={medFont} color={iconColor} onClick={prevSong} />
           {player.isPlaying ? <MdPauseCircleOutline onClick={pauseSong} fontSize={bigFont} /> : <MdPlayCircleOutline onClick={playSong} fontSize={bigFont}/> }
-          <MdSkipNext fontSize={medFont} />
-          <MdOutlineRepeat fontSize={medFont} onClick={nextSong} />
+          <MdSkipNext fontSize={medFont} color={iconColor} onClick={nextSong} />
+          <MdOutlineRepeat fontSize={medFont} color={iconColor}  />
         </div>
         <div>
           Progress Bar
         </div>
       </div>
       <div className={styles["volume-controls"]}>
-        <MdOutlineVolumeUp />
+          <MdOutlineVolumeUp />
         <MdOutlineClose onClick={handleClose}/>
       </div>
     </div>
