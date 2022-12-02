@@ -1,0 +1,44 @@
+$row-number: 0.03;
+$row-title: 0.85;
+$row-duration: 0.12;
+
+.album-container {
+  overflow-y: scroll;
+  background-color: rgb(32, 32, 32);
+  height: 100vh;
+
+  .songs-container {
+    background-color: rgb(32, 32, 32);
+    color: #b3b3b3;
+    font-size: 14px;
+  
+    .table-header-container {
+      display: flex;
+      background-color: rgb(32, 32, 32);
+      border-bottom: 0.1px solid grey;
+      padding-bottom: 0.5rem;
+      position: sticky;
+      top: -0.5px;
+      padding: 1rem 3rem;
+    }
+  
+    .table-header {
+      text-transform: uppercase;
+    }
+  
+    .table-header:nth-child(1) {
+      flex: $row-number;
+    }
+  
+    .table-header:nth-child(2) {
+      flex: $row-title;
+    }
+
+    .table-header:nth-child(3) {
+      justify-content: flex-end;
+      flex: $row-duration;
+      text-align: end;
+      padding-right: 3rem;
+    }
+  }
+}

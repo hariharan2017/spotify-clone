@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { actions as dataActions } from "../../store/data";
 import SongBanner from "../../components/SongBanner";
+import AlbumRow from "../../components/AlbumRow";
+import styles from "./Album.module.scss";
 
 const Album = () => {
   const dispatch = useDispatch();
@@ -36,8 +38,18 @@ const Album = () => {
   }
 
   return (
-    <div>
+    <div className={styles["album-container"]}>
       <SongBanner {...bannerProps} />
+      <div className={styles["songs-container"]}>
+        <div className={styles["table-header-container"]}>
+          <div className={styles["table-header"]}>#</div>
+          <div className={styles["table-header"]}>Title</div>
+          <div className={styles["table-header"]}>Duration</div>
+        </div>
+        {selectedAlbum?.tracks?.items?.map?.((song, index) => {
+          return <AlbumRow key={song?.uri} song={song} index={index} />
+        })}
+      </div>
     </div>
   );
 };

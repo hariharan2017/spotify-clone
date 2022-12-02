@@ -12,17 +12,18 @@ const Player = () => {
   const dispatch = useDispatch();
   const songData = useSelector(state => state.data.song);
   const player = useSelector(state => state.data.player);
+  const selectedAlbum = useSelector(state => state.data.album.selectedAlbum);
 
   const audioRef = useRef(null);
   
   useEffect(() => {
-    if(audioRef.current && songData?.song?.track?.["preview_url"]) {
+    if(audioRef.current && (songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"])) {
       audioRef.current.pause();
-      audioRef.current = new Audio(songData?.song?.track?.["preview_url"]);
+      audioRef.current = new Audio(songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"]);
       dispatch(dataActions.playSong());
       audioRef.current.play();
     } else {
-      audioRef.current = new Audio(songData?.song?.track?.["preview_url"]);
+      audioRef.current = new Audio(songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"]);
       dispatch(dataActions.playSong());
       audioRef.current.play();
     }
@@ -60,10 +61,10 @@ const Player = () => {
   return (
     <div className={styles["player-container"]}>
       <div className={styles["player-song-details"]}>
-        <img className={styles["song-image"]} src={songData?.song?.track?.album?.images?.[2]?.url} />
+        <img className={styles["song-image"]} src={songData?.song?.track?.album?.images?.[2]?.url || selectedAlbum?.images?.[0]?.url} />
         <div className={styles["song-text"]}>
-          <div className={styles["song-title"]}>{songData?.song?.track?.name}</div>
-          <div className={styles["song-artist"]}>{songData?.song?.track?.album?.artists?.[0]?.name}</div>
+          <div className={styles["song-title"]}>{songData?.song?.track?.name || songData?.song?.name}</div>
+          <div className={styles["song-artist"]}>{songData?.song?.track?.album?.artists?.[0]?.name || songData?.song?.artists?.[0]?.name}</div>
         </div>
         <MdFavorite />
       </div>

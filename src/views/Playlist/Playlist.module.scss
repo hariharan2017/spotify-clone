@@ -6,6 +6,8 @@ $row-duration: 0.12;
 
 .playlist-container {
   overflow-y: scroll;
+  background-color: rgb(32, 32, 32);
+  height: 100vh;
 
   .banner-container {
     display: flex;

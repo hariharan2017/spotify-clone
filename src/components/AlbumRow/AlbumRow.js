@@ -1,0 +1,30 @@
+import { useDispatch, useSelector } from "react-redux"
+import { showMinSecsDuration } from "../../helpers/methods";
+import { actions as dataActions } from "../../store/data";
+import classNames from "classnames";
+import styles from "./AlbumRow.module.scss";
+
+const AlbumRow = ({ song, index }) => {
+  const dispatch = useDispatch();
+
+  const songData = useSelector(state => state.data.song);
+
+  const handleRowClick = () => {
+    dispatch(dataActions.selectSong(song?.uri, song?.["preview_url"], song));
+  }
+
+  return (
+    <div className={classNames(styles["song-row-container"], songData.currentSong == song?.uri ? styles["selected"] : null)} onClick={handleRowClick}>
+      <div className={styles["song-number"]}>{index + 1}</div>
+      <div className={styles["song-details"]}>
+        <div className={styles["song-text"]}>
+          <div className={styles["song-title"]}>{song?.name}</div>
+          <div className={styles["song-artist"]}>{song?.artists?.[0]?.name}</div>
+        </div>
+      </div>
+      <div className={styles["song-duration"]}>{showMinSecsDuration(song?.["duration_ms"])}</div>
+    </div>
+  );
+};
+
+export default AlbumRow;
