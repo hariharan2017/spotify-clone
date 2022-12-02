@@ -51,11 +51,11 @@ const Player = () => {
   };
 
   const prevSong = () => {
-
+    dispatch(dataActions.playPrevSong());
   };
 
   const nextSong = () => {
-
+    dispatch(dataActions.playNextSong());
   };
 
   return (

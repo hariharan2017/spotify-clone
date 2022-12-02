@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom";
 import { getDaysAgo, getUri, showMinSecsDuration } from "../../helpers/methods";
 import { actions as dataActions } from "../../store/data";
+import { PLAYLIST_SONG } from "../../constants/constants";
 import classNames from "classnames";
 import styles from "./SongRow.module.scss";
 
@@ -10,9 +11,10 @@ const SongRow = ({ song, index }) => {
   const navigate = useNavigate();
 
   const songData = useSelector(state => state.data.song);
+  const selectedPlaylist = useSelector(state => state.data.userPlaylists.selectedPlaylist);
 
   const handleRowClick = () => {
-    dispatch(dataActions.selectSong(song?.track?.uri, song?.track?.["preview.url"], song));
+    dispatch(dataActions.selectSong(song?.track?.uri, song?.track?.["preview.url"], song, selectedPlaylist, PLAYLIST_SONG));
   }
 
   const handleAlbumClick = (event) => {

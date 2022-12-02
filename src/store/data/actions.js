@@ -19,11 +19,13 @@ export const getPlayListDataSuccess = (playlistData) => ({
   playlistData,
 });
 
-export const selectSong = (songUri, songUrl, song) => ({
+export const selectSong = (songUri, songUrl, song, selectedCategory, songType) => ({
   type: actionTypes.SELECT_SONG,
   songUri,
   songUrl,
-  song
+  song,
+  selectedCategory,
+  songType
 });
 
 export const closePlayer = () => ({
@@ -46,4 +48,12 @@ export const getAlbumData = (albumId) => ({
 export const getAlbumDataSuccess = (albumData) => ({
   type: actionTypes.FETCH_ALBUM_DATA_SUCCESS,
   albumData
+});
+
+export const playPrevSong = () => ({
+  type: actionTypes.PLAY_PREV_SONG
+});
+
+export const playNextSong = () => ({
+  type: actionTypes.PLAY_NEXT_SONG
 });

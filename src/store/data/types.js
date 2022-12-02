@@ -13,3 +13,5 @@ export const CLOSE_PLAYER = "CLOSE_PLAYER";
 
 export const PLAY_SONG = "PLAY_SONG";
 export const PAUSE_SONG = "PAUSE_SONG";
+export const PLAY_PREV_SONG = "PLAY_PREV_SONG";
+export const PLAY_NEXT_SONG = "PLAY_NEXT_SONG";
