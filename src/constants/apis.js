@@ -12,3 +12,6 @@ export const GET_SINGLE_BROWSE_CATEGORY = "/browse/categories/{category_id}";
 
 //Playlists
 export const GET_PLAYLIST = "/playlists/{playlist_id}";
+
+//Albums
+export const GET_ALBUM = "/albums/{id}";

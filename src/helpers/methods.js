@@ -28,3 +28,7 @@ export const getDaysAgo = (date) => {
   const diff = Math.round((currDate-oldDate)/(1000*60*60*24));
   return diff == 1 ? diff + " day ago" : diff + " days ago";
 }
+
+export const getReleaseYear = (date) => {
+  return new Date(date).getFullYear();
+}

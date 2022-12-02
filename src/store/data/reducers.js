@@ -65,8 +65,23 @@ const playerReducer = (state, action) => {
   }
 }
 
+const albumReducer = (state, action) => {
+  state = state || { selectedAlbum: {} }
+
+  switch (action.type) {
+    case actionTypes.FETCH_ALBUM_DATA_SUCCESS:
+      return {
+        ...state,
+        selectedAlbum: action.albumData
+      }
+    default:
+      return state;
+  }
+}
+
 export default combineReducers({
   userPlaylists: playlistReducer,
   song: songReducer,
-  player: playerReducer
+  player: playerReducer,
+  album: albumReducer
 });

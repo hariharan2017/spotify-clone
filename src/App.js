@@ -11,6 +11,7 @@ import Playlist from "./views/Playlist";
 import styles from "./App.module.scss";
 import SpotifyWebApi from "spotify-web-api-js";
 import Player from "./components/Player";
+import Album from "./views/Album";
 import Error from "./views/Error";
 
 const spotify = new SpotifyWebApi();
@@ -48,6 +49,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/playlist/:playlistId" element={<Layout><Playlist /></Layout>} />
+        <Route path="/album/:albumId" element={<Layout><Album /></Layout>} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

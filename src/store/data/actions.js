@@ -37,3 +37,13 @@ export const playSong = () => ({
 export const pauseSong = () => ({
   type: actionTypes.PAUSE_SONG
 });
+
+export const getAlbumData = (albumId) => ({
+  type: actionTypes.FETCH_ALBUM_DATA,
+  albumId
+});
+
+export const getAlbumDataSuccess = (albumData) => ({
+  type: actionTypes.FETCH_ALBUM_DATA_SUCCESS,
+  albumData
+});

@@ -1,16 +1,23 @@
 import { useDispatch, useSelector } from "react-redux"
-import { getDaysAgo, showMinSecsDuration } from "../../helpers/methods";
+import { useNavigate } from "react-router-dom";
+import { getDaysAgo, getUri, showMinSecsDuration } from "../../helpers/methods";
 import { actions as dataActions } from "../../store/data";
 import classNames from "classnames";
 import styles from "./SongRow.module.scss";
 
 const SongRow = ({ song, index }) => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const songData = useSelector(state => state.data.song);
 
   const handleRowClick = () => {
     dispatch(dataActions.selectSong(song?.track?.uri, song?.track?.["preview.url"], song));
+  }
+
+  const handleAlbumClick = (event) => {
+    event.stopPropagation();
+    navigate(`/album/${getUri(song?.track?.album?.uri)}`);
   }
 
   return (
@@ -23,7 +30,7 @@ const SongRow = ({ song, index }) => {
           <div className={styles["song-artist"]}>{song?.track?.artists?.[0]?.name}</div>
         </div>
       </div>
-      <div className={styles["song-album"]}>{song?.track?.album?.name}</div>
+      <div className={styles["song-album"]} onClick={handleAlbumClick}>{song?.track?.album?.name}</div>
       <div className={styles["song-date-added"]}>{getDaysAgo(song?.["added_at"])}</div>
       <div className={styles["song-duration"]}>{showMinSecsDuration(song?.track?.["duration_ms"])}</div>
     </div>
