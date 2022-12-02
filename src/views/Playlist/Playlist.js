@@ -33,17 +33,13 @@ const Playlist = () => {
     owner: selectedPlaylist?.owner?.display_name,
     followers: selectedPlaylist?.followers?.total?.toLocaleString('en-US') + " likes",
     totalTracks: selectedPlaylist?.tracks?.total + " songs",
+    image: selectedPlaylist?.images?.[0]?.url,
     duration
   }
 
   return (
     <div className={styles["playlist-container"]}>
-      <div className={styles["banner-container"]}>
-        <div className={styles["image-container"]}>
-          <img className={styles["playlist-banner-image"]} src={selectedPlaylist?.images?.[0]?.url} alt={selectedPlaylist?.name}/>
-        </div>
-        <SongBanner {...bannerProps} />
-      </div>
+      <SongBanner {...bannerProps} />
       <div className={styles["songs-container"]}>
         <div className={styles["table-header-container"]}>
           <div className={styles["table-header"]}>#</div>
