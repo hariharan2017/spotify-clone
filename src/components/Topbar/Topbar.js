@@ -24,6 +24,7 @@ const Topbar = () => {
 
   const handleLogout = () => {
     navigate("/");
+    dispatch(dataActions.clearData());
     dispatch(authActions.logOut());
   };
 

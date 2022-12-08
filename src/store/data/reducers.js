@@ -16,6 +16,11 @@ const playlistReducer = (state, action) => {
         ...state,
         selectedPlaylist: action.playlistData
       }
+    case actionTypes.CLEAR_DATA:
+      return {
+        currentUserPlaylists: [],
+        selectedPlaylist: {}
+      }
     default:
       return state;
   }
@@ -65,6 +70,10 @@ const songReducer = (state, action) => {
         song: state.nextSong,
         songUrl: state.nextSong?.track?.preview_url
       }
+    case actionTypes.CLEAR_DATA:
+      return {
+        currentSong: null, songUrl: null, song: null, songType: null, prevSong: null, nextSong: null
+      }
     default:
       return state;
   }
@@ -94,6 +103,10 @@ const playerReducer = (state, action) => {
         ...state,
         showPlayer: false
       }
+    case actionTypes.CLEAR_DATA:
+      return {
+        showPlayer: false, isPlaying: false
+      }
     default:
       return state;
   }
@@ -107,6 +120,10 @@ const albumReducer = (state, action) => {
       return {
         ...state,
         selectedAlbum: action.albumData
+      }
+    case actionTypes.CLEAR_DATA:
+      return {
+        selectedAlbum: {}
       }
     default:
       return state;

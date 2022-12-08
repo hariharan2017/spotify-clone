@@ -57,3 +57,7 @@ export const playPrevSong = () => ({
 export const playNextSong = () => ({
   type: actionTypes.PLAY_NEXT_SONG
 });
+
+export const clearData = () => ({
+  type: actionTypes.CLEAR_DATA
+});
