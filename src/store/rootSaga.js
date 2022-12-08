@@ -3,7 +3,13 @@ import { watcher as testWatcher } from "./test";
 // import { watcher as authWatcher } from "./auth";
 import authWatcher from "./auth/sagas";
 import dataWatcher from "./data/sagas";
+import searchWatcher from "./search/sagas";
 
 export default function* () {
-  yield all([fork(testWatcher), fork(authWatcher), fork(dataWatcher)]);
+  yield all([
+    fork(testWatcher),
+    fork(authWatcher),
+    fork(dataWatcher),
+    fork(searchWatcher),
+  ]);
 }

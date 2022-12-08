@@ -12,7 +12,7 @@ const Sidebar = () => {
   
   const sideMenu1 = [
     { icon: <MdHome className={iconStyle} />, label: "Home", onClick: () => navigate("/")},
-    { icon: <MdSearch className={iconStyle} />, label: "Search"},
+    { icon: <MdSearch className={iconStyle} />, label: "Search", onClick: () => navigate("/search")},
     { icon: <MdLibraryMusic className={iconStyle} />, label: "Your Library"},
   ]
   
