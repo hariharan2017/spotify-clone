@@ -72,9 +72,9 @@ const Player = () => {
       <div className={styles["player-controls"]}>
         <div className={styles["icons-container"]}>
           <MdShuffle fontSize={medFont} color={iconColor}  />
-          <MdSkipPrevious fontSize={medFont} color={iconColor} onClick={prevSong} />
+          <MdSkipPrevious className={styles["player-prev"]} fontSize={medFont} color={iconColor} onClick={prevSong} />
           {player.isPlaying ? <MdPauseCircleOutline onClick={pauseSong} fontSize={bigFont} /> : <MdPlayCircleOutline onClick={playSong} fontSize={bigFont}/> }
-          <MdSkipNext fontSize={medFont} color={iconColor} onClick={nextSong} />
+          <MdSkipNext className={styles["player-next"]} fontSize={medFont} color={iconColor} onClick={nextSong} />
           <MdOutlineRepeat fontSize={medFont} color={iconColor}  />
         </div>
         <div>

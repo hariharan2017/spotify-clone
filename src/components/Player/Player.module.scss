@@ -45,6 +45,14 @@
     .icons-container > svg {
       margin: 0 0.5rem
     }
+
+    .player-prev, .player-next {
+
+      &:hover {
+        color: white !important;
+        transform: scale(1.2);
+      }
+    }
   }
 
   .volume-controls {
