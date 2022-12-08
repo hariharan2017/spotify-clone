@@ -2,6 +2,7 @@ import { useEffect, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { actions as dataActions } from "../../store/data";
+import { getReadableDate } from "../../helpers/methods";
 import SongBanner from "../../components/SongBanner";
 import AlbumRow from "../../components/AlbumRow";
 import styles from "./Album.module.scss";
@@ -49,6 +50,10 @@ const Album = () => {
         {selectedAlbum?.tracks?.items?.map?.((song, index) => {
           return <AlbumRow key={song?.uri} song={song} index={index} />
         })}
+        <div className={styles["copyright-container"]}>
+          <div className={styles["text-top"]}>{getReadableDate(selectedAlbum?.release_date)}</div>
+          <div className={styles["text-bottom"]}>{selectedAlbum?.copyrights?.[0]?.text}</div>
+        </div>
       </div>
     </div>
   );
