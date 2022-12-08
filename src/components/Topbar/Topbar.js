@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { accessUrl } from "../../helpers/spotify";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { actions as authActions } from "../../store/auth";
@@ -9,6 +10,8 @@ import styles from "./Topbar.module.scss";
 
 const Topbar = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const auth = useSelector(state => state.authentication.auth);
   const profile = useSelector(state => state.authentication.profile.details)
 
@@ -20,6 +23,7 @@ const Topbar = () => {
   }, [JSON.stringify(auth)]);
 
   const handleLogout = () => {
+    navigate("/");
     dispatch(authActions.logOut());
   };
 
