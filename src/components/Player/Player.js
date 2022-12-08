@@ -17,17 +17,21 @@ const Player = () => {
 
   const audioRef = useRef(null);
   
+  const onSongEnd = () => {
+    dispatch(dataActions.pauseSong());
+    audioRef.current.load(songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"]);
+  }
+
   useEffect(() => {
     if(audioRef.current && (songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"])) {
       !audioRef.current.paused && audioRef.current.pause();
-      audioRef.current = new Audio(songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"]);
-      dispatch(dataActions.playSong());
-      audioRef.current.play();
-    } else {
-      audioRef.current = new Audio(songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"]);
-      dispatch(dataActions.playSong());
-      audioRef.current.play();
     }
+
+    audioRef.current = new Audio(songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"]);
+    dispatch(dataActions.playSong());
+    audioRef.current.play();
+
+    audioRef.current.onended = onSongEnd;
 
     return () => {
       if(audioRef.current && !audioRef.current.paused) {
@@ -47,8 +51,10 @@ const Player = () => {
   };
 
   const pauseSong = () => {
-    dispatch(dataActions.pauseSong());
-    audioRef.current?.pause();
+    if(audioRef.current && !audioRef.current.paused) {
+      dispatch(dataActions.pauseSong());
+      audioRef.current?.pause();
+    }
   };
 
   const prevSong = () => {
