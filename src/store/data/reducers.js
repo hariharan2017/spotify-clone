@@ -29,12 +29,15 @@ const playlistReducer = (state, action) => {
 const songReducer = (state, action) => {
   state = state || { currentSong: null, songUrl: null, song: null, songType: null, prevSong: null, nextSong: null };
 
+  let next = null;
+  let prev = null;
+  let total = 0;
+
   switch (action.type) {
     case actionTypes.SELECT_SONG:
-      let next = null;
-      let prev = null;
+
       if (action.songType === PLAYLIST_SONG) {
-        const total = action.selectedCategory?.tracks?.items?.length || 0;
+        total = action.selectedCategory?.tracks?.items?.length || 0;
         action.selectedCategory?.tracks?.items?.forEach((song, idx) => {
           if(action.songUri === song?.track?.uri) {
             next = idx != total ? action.selectedCategory?.tracks?.items?.[idx+1] : action.selectedCategory?.tracks?.items?.[0];
@@ -55,20 +58,42 @@ const songReducer = (state, action) => {
         nextSong: next
       }
     case actionTypes.PLAY_PREV_SONG:
+
+      if (state.songType === PLAYLIST_SONG) {
+        total = action.selectedPlaylist?.tracks?.items?.length || 0;
+        action.selectedPlaylist?.tracks?.items?.forEach((song, idx) => {
+          if(state.currentSong === song?.track?.uri) {
+            prev = idx-2 >= 0 ? action.selectedPlaylist?.tracks?.items?.[idx-2] : action.selectedPlaylist?.tracks?.items?.[total-1];
+          }
+        })
+      }
+
       return {
         ...state,
         nextSong: state.song,
         currentSong: state.prevSong?.track?.uri,
         song: state.prevSong,
-        songUrl: state.prevSong?.track?.preview_url
+        songUrl: state.prevSong?.track?.preview_url,
+        prevSong: prev,
       }
     case actionTypes.PLAY_NEXT_SONG:
+
+      if (state.songType === PLAYLIST_SONG) {
+        total = action.selectedPlaylist?.tracks?.items?.length || 0;
+        action.selectedPlaylist?.tracks?.items?.forEach((song, idx) => {
+          if(state.currentSong === song?.track?.uri) {
+            next = idx+2 < total ? action.selectedPlaylist?.tracks?.items?.[idx+2] : action.selectedPlaylist?.tracks?.items?.[0];
+          }
+        })
+      }
+
       return {
         ...state,
         prevSong: state.song,
         currentSong: state.nextSong?.track?.uri,
         song: state.nextSong,
-        songUrl: state.nextSong?.track?.preview_url
+        songUrl: state.nextSong?.track?.preview_url,
+        nextSong: next,
       }
     case actionTypes.CLEAR_DATA:
       return {

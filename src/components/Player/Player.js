@@ -13,12 +13,13 @@ const Player = () => {
   const songData = useSelector(state => state.data.song);
   const player = useSelector(state => state.data.player);
   const selectedAlbum = useSelector(state => state.data.album.selectedAlbum);
+  const selectedPlaylist = useSelector(state => state.data.userPlaylists.selectedPlaylist);
 
   const audioRef = useRef(null);
   
   useEffect(() => {
     if(audioRef.current && (songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"])) {
-      audioRef.current.pause();
+      !audioRef.current.paused && audioRef.current.pause();
       audioRef.current = new Audio(songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"]);
       dispatch(dataActions.playSong());
       audioRef.current.play();
@@ -29,7 +30,7 @@ const Player = () => {
     }
 
     return () => {
-      if(audioRef.current) {
+      if(audioRef.current && !audioRef.current.paused) {
         dispatch(dataActions.pauseSong());
         audioRef.current.pause();
       }
@@ -51,11 +52,11 @@ const Player = () => {
   };
 
   const prevSong = () => {
-    dispatch(dataActions.playPrevSong());
+    dispatch(dataActions.playPrevSong(selectedPlaylist, selectedAlbum));
   };
 
   const nextSong = () => {
-    dispatch(dataActions.playNextSong());
+    dispatch(dataActions.playNextSong(selectedPlaylist, selectedAlbum));
   };
 
   return (

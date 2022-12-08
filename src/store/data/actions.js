@@ -50,12 +50,16 @@ export const getAlbumDataSuccess = (albumData) => ({
   albumData
 });
 
-export const playPrevSong = () => ({
-  type: actionTypes.PLAY_PREV_SONG
+export const playPrevSong = (selectedPlaylist, selectedAlbum) => ({
+  type: actionTypes.PLAY_PREV_SONG,
+  selectedPlaylist,
+  selectedAlbum
 });
 
-export const playNextSong = () => ({
-  type: actionTypes.PLAY_NEXT_SONG
+export const playNextSong = (selectedPlaylist, selectedAlbum) => ({
+  type: actionTypes.PLAY_NEXT_SONG,
+  selectedPlaylist,
+  selectedAlbum
 });
 
 export const clearData = () => ({
