@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MdFavorite, MdShuffle, MdSkipPrevious, MdPlayCircleOutline, MdSkipNext, MdOutlineRepeat, MdOutlineVolumeUp, MdOutlineVolumeOff, MdOutlineClose, MdPauseCircleOutline } from "react-icons/md";
 import { actions as dataActions } from "../../store/data";
+import ProgressBar from "../ProgressBar";
 import styles from "./Player.module.scss";
 
 const medFont = "1.75rem";
@@ -83,9 +84,7 @@ const Player = () => {
           <MdSkipNext className={styles["player-next"]} fontSize={medFont} color={iconColor} onClick={nextSong} />
           <MdOutlineRepeat fontSize={medFont} color={iconColor}  />
         </div>
-        <div>
-          Progress Bar
-        </div>
+        <ProgressBar backgroundColor={"white"} duration={(songData?.song?.track?.duration_ms || 1000)/10000} completed={(audioRef.current?.currentTime || 0)}/>
       </div>
       <div className={styles["volume-controls"]}>
           <MdOutlineVolumeUp />
