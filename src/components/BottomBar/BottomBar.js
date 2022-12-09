@@ -10,7 +10,7 @@ const BottomBar = () => {
   const sideMenu1 = [
     { icon: <MdHome className={iconStyle} />, label: "Home", onClick: () => navigate("/")},
     { icon: <MdSearch className={iconStyle} />, label: "Search", onClick: () => navigate("/search")},
-    { icon: <MdLibraryMusic className={iconStyle} />, label: "Your Library"},
+    { icon: <MdLibraryMusic className={iconStyle} />, label: "Your Library", onClick: () => navigate("/library")},
   ]
 
   return (

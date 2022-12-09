@@ -13,8 +13,9 @@ import styles from "./App.module.scss";
 import SpotifyWebApi from "spotify-web-api-js";
 import Player from "./components/Player";
 import Album from "./views/Album";
+import Search from "./views/Search";
+import Library from "./views/Library";
 import Error from "./views/Error";
-import Search from "./views/Search/Search";
 
 const spotify = new SpotifyWebApi();
 
@@ -54,6 +55,7 @@ function App() {
         <Route path="/playlist/:playlistId" element={<Layout><Playlist /></Layout>} />
         <Route path="/album/:albumId" element={<Layout><Album /></Layout>} />
         <Route path="/search" element={<Layout><Search /></Layout>} />
+        <Route path="/library" element={<Layout><Library /></Layout>} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,32 @@
+.library-container {
+  background-color: #181818;
+  overflow-y: scroll;
+
+  .row-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    .image {
+      height: 50px;
+      width: 50px;
+      object-fit: contain;
+    }
+
+    .text {
+      color: white;
+      padding-left: 0.75rem;
+
+      .text-top {
+        font-size: 0.85rem;
+        font-weight: 700;
+      }
+
+      .text-bottom {
+        color: #b3b3b3;
+        text-transform: capitalize;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
