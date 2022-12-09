@@ -74,7 +74,7 @@ const Player = () => {
           <div className={styles["song-title"]}>{songData?.song?.track?.name || songData?.song?.name}</div>
           <div className={styles["song-artist"]}>{songData?.song?.track?.album?.artists?.[0]?.name || songData?.song?.artists?.[0]?.name}</div>
         </div>
-        <MdFavorite />
+        {/* <MdFavorite /> */}
       </div>
       <div className={styles["player-controls"]}>
         <div className={styles["icons-container"]}>

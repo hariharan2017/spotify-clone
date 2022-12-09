@@ -54,6 +54,7 @@
 @media screen and (max-width: 600px) {
   .topbar-container {
     justify-content: flex-end;
+    min-height: 3rem;
 
     .topbar-icons-container {
       display: none;

@@ -61,3 +61,33 @@
     flex: 0.25;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .player-container {
+    height: auto;
+    background-color: #535353;
+    bottom: 50px;
+    border-radius: 10px;
+    padding: 0;
+
+    .player-song-details {
+      flex: 2;
+      .song-text {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .player-controls {
+      justify-content: flex-end;
+
+      .icons-container > svg:nth-child(-n+2), .icons-container > svg:nth-child(4), .icons-container > svg:nth-child(5) {
+        display: none;
+      }
+    }
+
+    .volume-controls {
+      display: none;
+    }
+  }
+}
