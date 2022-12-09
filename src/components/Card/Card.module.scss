@@ -32,6 +32,26 @@
 
   &:hover {
     transition: 0.25s ease-in;
-    background-color: rgba(54, 54, 54, 0.612)
+    background-color: rgba(54, 54, 54, 0.612);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    .card-image {
+      height: 100px;
+      width: 100px;
+    }
+
+    .card-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card-desc {
+      display: none;
+    }
   }
 }

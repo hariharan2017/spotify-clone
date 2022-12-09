@@ -6,6 +6,7 @@ import { actions as authActions } from "./store/auth";
 import { actions as spotifyActions } from "./store/spotify";
 import Sidebar from "./components/Sidebar";
 import Topbar from "./components/Topbar";
+import BottomBar from "./components/BottomBar";
 import Home from "./views/Home";
 import Playlist from "./views/Playlist";
 import styles from "./App.module.scss";
@@ -26,6 +27,7 @@ const Layout = ({ children }) => {
       <div className={styles["main-container"]}>
         <Topbar />
         {children}
+        <BottomBar />
       </div>
       {player.showPlayer && <Player />}
     </div>

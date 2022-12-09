@@ -20,3 +20,17 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .home-container {
+    .section-container {
+      padding: 10px;
+
+      .section-playlists-container {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+      }
+    }
+  }
+}

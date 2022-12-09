@@ -80,3 +80,9 @@
     color: white;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .sidebar-container {
+    display: none;
+  }
+}
