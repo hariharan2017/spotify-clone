@@ -1,0 +1,33 @@
+.bottom-menu-container {
+  display: flex;
+  background-color: #000;
+  color: #b3b3b3;
+  justify-content: space-evenly;
+  position: sticky;
+  bottom: 0;
+  padding: 2%;
+
+  .bottom-menu-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .bottom-menu-icon-label {
+      font-size: 0.75rem;
+    }
+
+    &_hover {
+      color: white;
+    }
+
+    &_active {
+      color: white;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .bottom-menu-container {
+    display: none;
+  }
+}
