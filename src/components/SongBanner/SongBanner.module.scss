@@ -55,11 +55,54 @@
       }
   
       .banner-footer-duration {
+        font-size: 0.8125rem;
         color: hsla(0, 0%, 100%, .7);
       }
   
       .banner-footer-spacer {
         padding: 0 10px 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner-container {
+    flex-direction: column;
+    align-items: center;
+  
+    .image-container {
+      .playlist-banner-image {
+        height: 10rem;
+        width: 10rem;
+        object-fit: contain;
+      }
+    }
+
+    .banner-text-container {
+      color: #b3b3b3;
+
+      .banner-text-type {
+        display: none;
+      }
+
+      .banner-text-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .banner-footer-owner {
+        display: none;
+      }
+
+      .banner-footer-spacer {
+        display: none;
+      }
+
+      .banner-footer-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
       }
     }
   }

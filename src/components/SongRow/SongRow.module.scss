@@ -84,3 +84,40 @@ $row-duration: 0.12;
     }
   }
 }
+
+
+@media screen and (max-width: 600px) {
+
+  .song-row-container {
+    padding: 0.5rem 0.5rem;
+ 
+    .song-number {
+      flex: 0.05;
+      padding-left: 0.75rem;
+    }
+
+    .song-details {
+      flex: 0.9;
+
+      .song-image {
+        display: none;
+      }
+
+      .song-artist {
+        font-size: 0.85rem;
+      }
+    }
+
+    .song-album {
+      display: none;
+    }
+
+    .song-date-added {
+      display: none;
+    }
+
+    .song-duration {
+      display: none;
+    }
+  }
+}

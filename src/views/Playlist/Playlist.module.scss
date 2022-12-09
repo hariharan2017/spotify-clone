@@ -70,3 +70,11 @@ $row-duration: 0.12;
     padding-right: 3rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .songs-container {
+    .table-header-container {
+      display: none;
+    }
+  }
+}
