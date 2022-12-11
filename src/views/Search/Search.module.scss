@@ -12,13 +12,29 @@
     object-fit: contain;
     background-repeat: no-repeat;
     min-width: 20vw;
-    margin: 2rem 0; 
+    margin: 2rem 0;
 
     .title {
       color: white;
       font-size: 1.5rem;
       padding-left: 10px;
       padding-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-container {
+   
+    .search-card-container {
+      height: 40px;
+      background-image: none;
+      min-width: 40vw;
+      margin: 0.5rem 0;
+
+      .title {
+        font-size: 0.75rem;
+      }
     }
   }
 }
