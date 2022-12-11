@@ -23,6 +23,7 @@ const Layout = ({ children }) => {
   const player = useSelector(state => state.data.player);
 
   return (
+    <>
     <div className={styles["app-container"]}>
       <Sidebar />
       <div className={styles["main-container"]}>
@@ -30,8 +31,9 @@ const Layout = ({ children }) => {
         {children}
         <BottomBar />
       </div>
-      {player.showPlayer && <Player />}
     </div>
+    {player.showPlayer && <Player />}
+    </>
   );
 };
 
