@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MdFavorite, MdShuffle, MdSkipPrevious, MdPlayCircleOutline, MdSkipNext, MdOutlineRepeat, MdOutlineVolumeUp, MdOutlineVolumeOff, MdOutlineClose, MdPauseCircleOutline } from "react-icons/md";
 import { actions as dataActions } from "../../store/data";
@@ -13,6 +13,9 @@ const Player = () => {
   const player = useSelector(state => state.data.player);
   const selectedAlbum = useSelector(state => state.data.album.selectedAlbum);
   const selectedPlaylist = useSelector(state => state.data.userPlaylists.selectedPlaylist);
+
+  const [volume, setVolume] = useState(100);
+  const [muted, setMuted] = useState(false);
 
   const audioRef = useRef(null);
   
@@ -77,6 +80,21 @@ const Player = () => {
     nextSong
   }
 
+  const onMuteClick = () => {
+    setMuted(true);
+    audioRef.current.muted = true;
+  };
+
+  const onUnmuteClick = () => {
+    setMuted(false);
+    audioRef.current.muted = false;
+  };
+
+  const onVolumeChange = (event) => {
+    setVolume(event.target.value);
+    audioRef.current.volume = event.target.value/100;
+  };
+
   return (
     <div className={styles["player-container"]} onClick={handlePlayerClick}>
       <div className={styles["player-song-details"]}>
@@ -98,7 +116,8 @@ const Player = () => {
         <ProgressBar backgroundColor={"white"} duration={(songData?.song?.track?.duration_ms || 1000)/10000} completed={(audioRef.current?.currentTime || 0)}/>
       </div>
       <div className={styles["volume-controls"]}>
-          <MdOutlineVolumeUp />
+          {!muted ? <MdOutlineVolumeUp onClick={onMuteClick} /> : <MdOutlineVolumeOff onClick={onUnmuteClick} />}
+          <input className={styles["slider"]} type={"range"} value={volume} onChange={onVolumeChange}/>
         <MdOutlineClose onClick={handleClose}/>
       </div>
       <MobilePlayer audio={audioRef} {...mobilePlayerProps} />
