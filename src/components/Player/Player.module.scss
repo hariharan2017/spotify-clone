@@ -65,14 +65,21 @@
 @media screen and (max-width: 600px) {
   .player-container {
     height: auto;
+    width: auto;
     background-color: #535353;
     bottom: 50px;
-    border-radius: 10px;
-    padding: 0;
+    border-radius: 6px;
+    margin: 0 10px;
+    padding: 0 5px;
     position: sticky;
 
     .player-song-details {
       flex: 2;
+
+      .song-image {
+        padding: 5px;
+      }
+
       .song-text {
         display: flex;
         flex-direction: column;
