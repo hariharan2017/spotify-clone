@@ -9,6 +9,7 @@ const iconStyle = styles["side-icon-style"];
 const Sidebar = () => {
   const navigate = useNavigate();
   const currPlaylists = useSelector(state => state.data.userPlaylists.currentUserPlaylists);
+  const player = useSelector(state => state.data.player);
   
   const sideMenu1 = [
     { icon: <MdHome className={iconStyle} />, label: "Home", onClick: () => navigate("/")},
@@ -54,7 +55,7 @@ const Sidebar = () => {
         </div>
       </div>
       {!!currPlaylists?.items && <div className={styles["sidebar-divider"]} />}
-      <div className={styles["playlist-items"]}>
+      <div className={styles["playlist-items"]} style={{ marginBottom: player.showPlayer ? "90px" : "0px" }}>
         {currPlaylists?.items?.map((item) => {
           return <div className={styles["playlist-row-item"]} key={item?.uri} onClick={() => handlePlaylistItem(item)}>{item?.name}</div>
         })}

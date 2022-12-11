@@ -27,3 +27,15 @@
     color: white;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .button-primary {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+
+  .button-secondary {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}
