@@ -62,8 +62,8 @@ const songReducer = (state, action) => {
       if (state.songType === PLAYLIST_SONG) {
         total = action.selectedPlaylist?.tracks?.items?.length || 0;
         action.selectedPlaylist?.tracks?.items?.forEach((song, idx) => {
-          if(state.currentSong === song?.track?.uri) {
-            prev = idx-2 >= 0 ? action.selectedPlaylist?.tracks?.items?.[idx-2] : action.selectedPlaylist?.tracks?.items?.[total-1];
+          if(state.prevSong?.track?.uri === song?.track?.uri) {
+            prev = idx != 0 ? action.selectedPlaylist?.tracks?.items?.[idx-1] : action.selectedPlaylist?.tracks?.items?.[total-1];
           }
         })
       }
@@ -81,8 +81,8 @@ const songReducer = (state, action) => {
       if (state.songType === PLAYLIST_SONG) {
         total = action.selectedPlaylist?.tracks?.items?.length || 0;
         action.selectedPlaylist?.tracks?.items?.forEach((song, idx) => {
-          if(state.currentSong === song?.track?.uri) {
-            next = idx+2 < total ? action.selectedPlaylist?.tracks?.items?.[idx+2] : action.selectedPlaylist?.tracks?.items?.[0];
+          if(state.nextSong?.track?.uri === song?.track?.uri) {
+            next = idx+1 != total ? action.selectedPlaylist?.tracks?.items?.[idx+1] : action.selectedPlaylist?.tracks?.items?.[0];
           }
         })
       }

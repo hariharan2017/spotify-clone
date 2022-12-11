@@ -61,11 +61,13 @@ const Player = () => {
     }
   };
 
-  const prevSong = () => {
+  const prevSong = (event) => {
+    event.stopPropagation();
     dispatch(dataActions.playPrevSong(selectedPlaylist, selectedAlbum));
   };
 
-  const nextSong = () => {
+  const nextSong = (event) => {
+    event.stopPropagation();
     dispatch(dataActions.playNextSong(selectedPlaylist, selectedAlbum));
   };
 
