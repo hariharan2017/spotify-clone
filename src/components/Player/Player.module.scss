@@ -94,6 +94,10 @@
       }
     }
 
+    .player-controls > div:nth-child(2) {
+      display: none;
+    }
+
     .volume-controls {
       display: none;
     }

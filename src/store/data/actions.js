@@ -65,3 +65,11 @@ export const playNextSong = (selectedPlaylist, selectedAlbum) => ({
 export const clearData = () => ({
   type: actionTypes.CLEAR_DATA
 });
+
+export const openMobilePlayer = () => ({
+  type: actionTypes.OPEN_MOBILE_PLAYER
+});
+
+export const closeMobilePlayer = () => ({
+  type: actionTypes.CLOSE_MOBILE_PLAYER
+});

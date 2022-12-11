@@ -105,7 +105,7 @@ const songReducer = (state, action) => {
 }
 
 const playerReducer = (state, action) => {
-  state = state || { showPlayer: false, isPlaying: false };
+  state = state || { showPlayer: false, isPlaying: false, showMobilePlayer: false };
 
   switch (action.type) {
     case actionTypes.SELECT_SONG:
@@ -131,6 +131,16 @@ const playerReducer = (state, action) => {
     case actionTypes.CLEAR_DATA:
       return {
         showPlayer: false, isPlaying: false
+      }
+    case actionTypes.OPEN_MOBILE_PLAYER:
+      return {
+        ...state,
+        showMobilePlayer: true
+      }
+    case actionTypes.CLOSE_MOBILE_PLAYER:
+      return {
+        ...state,
+        showMobilePlayer: false
       }
     default:
       return state;

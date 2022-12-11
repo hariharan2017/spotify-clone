@@ -1,10 +1,11 @@
 import { useState, useEffect, memo } from "react";
 import { useSelector } from "react-redux";
+import classNames from "classnames";
 import styles from "./ProgressBar.module.scss";
 
 let interval;
 
-const ProgressBar = ({ backgroundColor, duration, completed, showLabel = false }) => {
+const ProgressBar = ({ backgroundColor, duration, completed, showLabel = false, className }) => {
 
   const songData = useSelector(state => state.data.song);
   const player = useSelector(state => state.data.player);
@@ -30,7 +31,7 @@ const ProgressBar = ({ backgroundColor, duration, completed, showLabel = false }
   }, [player.isPlaying])
 
   return (
-    <div className={styles["progress-bar-container"]}>
+    <div className={classNames(styles["progress-bar-container"], className)}>
       <div className={styles["progress-bar-filler"]} style={{ width: `${(progress/(duration||1))*100}%`, backgroundColor: `${backgroundColor}` }}>
         {showLabel && <span className={styles["progress-bar-label"]}>{`${progress}%`}</span>}
       </div>

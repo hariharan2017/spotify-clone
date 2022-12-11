@@ -17,3 +17,6 @@ export const PLAY_PREV_SONG = "PLAY_PREV_SONG";
 export const PLAY_NEXT_SONG = "PLAY_NEXT_SONG";
 
 export const CLEAR_DATA = "CLEAR_DATA";
+
+export const OPEN_MOBILE_PLAYER = "OPEN_MOBILE_PLAYER";
+export const CLOSE_MOBILE_PLAYER = "CLOSE_MOBILE_PLAYER";

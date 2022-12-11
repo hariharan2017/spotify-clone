@@ -2,12 +2,10 @@ import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MdFavorite, MdShuffle, MdSkipPrevious, MdPlayCircleOutline, MdSkipNext, MdOutlineRepeat, MdOutlineVolumeUp, MdOutlineVolumeOff, MdOutlineClose, MdPauseCircleOutline } from "react-icons/md";
 import { actions as dataActions } from "../../store/data";
+import { medFont, bigFont, iconColor } from "../../constants/css";
 import ProgressBar from "../ProgressBar";
+import MobilePlayer from "../MobilePlayer";
 import styles from "./Player.module.scss";
-
-const medFont = "1.75rem";
-const bigFont = "2.5rem";
-const iconColor = "grey";
 
 const Player = () => {
   const dispatch = useDispatch();
@@ -46,12 +44,14 @@ const Player = () => {
     dispatch(dataActions.closePlayer());
   };
 
-  const playSong = () => {
+  const playSong = (event) => {
+    event.stopPropagation();
     dispatch(dataActions.playSong());
     audioRef.current?.play();
   };
 
-  const pauseSong = () => {
+  const pauseSong = (event) => {
+    event.stopPropagation();
     if(audioRef.current && !audioRef.current.paused) {
       dispatch(dataActions.pauseSong());
       audioRef.current?.pause();
@@ -66,8 +66,19 @@ const Player = () => {
     dispatch(dataActions.playNextSong(selectedPlaylist, selectedAlbum));
   };
 
+  const handlePlayerClick = () => {
+    dispatch(dataActions.openMobilePlayer());
+  };
+
+  const mobilePlayerProps = {
+    playSong,
+    pauseSong,
+    prevSong,
+    nextSong
+  }
+
   return (
-    <div className={styles["player-container"]}>
+    <div className={styles["player-container"]} onClick={handlePlayerClick}>
       <div className={styles["player-song-details"]}>
         <img className={styles["song-image"]} src={songData?.song?.track?.album?.images?.[2]?.url || selectedAlbum?.images?.[0]?.url} />
         <div className={styles["song-text"]}>
@@ -90,6 +101,7 @@ const Player = () => {
           <MdOutlineVolumeUp />
         <MdOutlineClose onClick={handleClose}/>
       </div>
+      <MobilePlayer audio={audioRef} {...mobilePlayerProps} />
     </div>
   );
 };

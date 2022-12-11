@@ -1,0 +1,80 @@
+.mobile-player-container {
+  position: absolute;
+  overflow: hidden;
+  background-color: rgb(118, 118, 118);
+  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.6) 80%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5%;
+  margin: 0 -0.6rem;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transform: translate3d(0, 0, 0);
+  animation: mobile-player__open 0.3s ease-out;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .image {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .song-details {
+    .title {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .artist {
+      color: #9c9c9c;
+    }
+  }
+
+  .progress {
+    width: auto;
+  } 
+
+  .icons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.player_closing {
+  transform: translate3d(0, 100%, 0);
+  animation: mobile-player__close 0.3s ease-out;
+}
+
+@keyframes mobile-player__open {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes mobile-player__close {
+  0% {
+    transform: translate3d(0, 0%, 0);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .mobile-player-container {
+    display: none;
+  };
+};
