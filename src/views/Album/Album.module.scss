@@ -21,6 +21,7 @@ $row-duration: 0.12;
       position: sticky;
       top: -0.5px;
       padding: 1rem 3rem;
+      font-weight: 700;
     }
   
     .table-header {
@@ -50,5 +51,15 @@ $row-duration: 0.12;
   .text-bottom {
     font-size: 0.75rem;
     font-size: 400;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .album-container {
+    .songs-container {
+      .table-header-container {
+        display: none;
+      }
+    }
   }
 }

@@ -32,7 +32,7 @@ const ProgressBar = ({ backgroundColor, duration, completed, showLabel = false, 
 
   return (
     <div className={classNames(styles["progress-bar-container"], className)}>
-      <div className={styles["progress-bar-filler"]} style={{ width: `${(progress/(duration||1))*100}%`, backgroundColor: `${backgroundColor}` }}>
+      <div className={styles["progress-bar-filler"]} style={{ width: `${(progress/(duration||1))%100}%`, backgroundColor: `${backgroundColor}` }}>
         {showLabel && <span className={styles["progress-bar-label"]}>{`${progress}%`}</span>}
       </div>
     </div>
