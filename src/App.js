@@ -54,8 +54,8 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Layout>
+      <Layout>
+        <Suspense fallback={<div className={styles["loading-container"]}>Loading...</div>} >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/playlist/:playlistId" element={<Playlist />} />
@@ -64,8 +64,8 @@ function App() {
             <Route path="/library" element={<Library />} />
             <Route path="*" element={<Error />} />
           </Routes>
-        </Layout>
-      </Suspense>
+        </Suspense>
+      </Layout>
     </BrowserRouter>
   );
 }

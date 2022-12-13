@@ -9,6 +9,15 @@
   width: 100%;
 }
 
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: #b3b3b3;
+}
+
 @media only screen and (max-width: 720px) {
   .app-container {
     flex-direction: column;
