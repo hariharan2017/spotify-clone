@@ -26,7 +26,7 @@ const SongRow = ({ song, index }) => {
     <div className={classNames(styles["song-row-container"], songData.currentSong == song?.track?.uri ? styles["selected"] : null)} onClick={handleRowClick}>
       <div className={styles["song-number"]}>{index + 1}</div>
       <div className={styles["song-details"]}>
-        <img className={styles["song-image"]} src={song?.track?.album?.images?.[2]?.url} />
+        <img className={styles["song-image"]} src={song?.track?.album?.images?.[2]?.url} alt={song?.track?.name} />
         <div className={styles["song-text"]}>
           <div className={styles["song-title"]}>{song?.track?.name}</div>
           <div className={styles["song-artist"]}>{song?.track?.artists?.[0]?.name}</div>

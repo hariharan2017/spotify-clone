@@ -15,8 +15,8 @@ const Library = () => {
     <div className={styles["library-container"]}>
       {currPlaylists?.items?.map((item) => {
         return (
-          <div className={styles["row-container"]} onClick={() => handlePlaylistItem(item)}>
-            <img className={styles["image"]} src={item?.images?.[0]?.url} />
+          <div key={item?.uri} className={styles["row-container"]} onClick={() => handlePlaylistItem(item)}>
+            <img className={styles["image"]} src={item?.images?.[0]?.url} alt={item?.name} />
             <div className={styles["text"]}>
               <div className={styles["text-top"]}>{item?.name}</div>
               <div className={styles["text-bottom"]}>{item?.type} . {item?.owner?.display_name}</div>

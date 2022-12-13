@@ -27,7 +27,7 @@ const MobilePlayer = ({ audio, playSong, pauseSong, prevSong, nextSong, onMuteCl
           <div>{selectedPlaylist?.name}</div>
           <MdMoreHoriz fontSize={bigFont} />
         </div>
-        <img className={styles["image"]} src={songData?.song?.track?.album?.images?.[2]?.url || selectedAlbum?.images?.[0]?.url} />
+        <img className={styles["image"]} src={songData?.song?.track?.album?.images?.[2]?.url || selectedAlbum?.images?.[0]?.url} alt={songData?.song?.track?.name || songData?.song?.name} />
         <div className={styles["song-details"]}>
           <div className={styles["title"]}>{songData?.song?.track?.name || songData?.song?.name}</div>
           <div className={styles["artist"]}>{songData?.song?.track?.album?.artists?.[0]?.name || songData?.song?.artists?.[0]?.name}</div>

@@ -105,7 +105,7 @@ const Player = () => {
   return (
     <div className={styles["player-container"]} onClick={handlePlayerClick}>
       <div className={styles["player-song-details"]}>
-        <img className={styles["song-image"]} src={songData?.song?.track?.album?.images?.[2]?.url || selectedAlbum?.images?.[0]?.url} />
+        <img className={styles["song-image"]} src={songData?.song?.track?.album?.images?.[2]?.url || selectedAlbum?.images?.[0]?.url} alt={songData?.song?.track?.name || songData?.song?.name} />
         <div className={styles["song-text"]}>
           <div className={styles["song-title"]}>{songData?.song?.track?.name || songData?.song?.name}</div>
           <div className={styles["song-artist"]}>{songData?.song?.track?.album?.artists?.[0]?.name || songData?.song?.artists?.[0]?.name}</div>
