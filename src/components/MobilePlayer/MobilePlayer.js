@@ -1,12 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 import { actions as dataActions } from "../../store/data";
-import { MdExpandMore, MdMoreHoriz, MdShuffle, MdSkipPrevious, MdPauseCircleOutline, MdPlayCircleOutline, MdSkipNext, MdOutlineRepeat } from "react-icons/md";
+import { MdExpandMore, MdMoreHoriz, MdShuffle, MdSkipPrevious, MdPauseCircleOutline, MdPlayCircleOutline, MdSkipNext, MdOutlineRepeat, MdOutlineVolumeUp, MdOutlineVolumeOff } from "react-icons/md";
 import { smallFont, medFont, bigFont, iconColor } from "../../constants/css";
 import ProgressBar from "../ProgressBar";
 import classNames from "classnames";
 import styles from "./MobilePlayer.module.scss";
 
-const MobilePlayer = ({ audio, playSong, pauseSong, prevSong, nextSong }) => {
+const MobilePlayer = ({ audio, playSong, pauseSong, prevSong, nextSong, onMuteClick, onUnmuteClick, onVolumeChange, muted, volume }) => {
   const dispatch = useDispatch();
   const songData = useSelector(state => state.data.song);
   const player = useSelector(state => state.data.player);
@@ -39,6 +39,10 @@ const MobilePlayer = ({ audio, playSong, pauseSong, prevSong, nextSong }) => {
           {player.isPlaying ? <MdPauseCircleOutline onClick={pauseSong} fontSize={bigFont} /> : <MdPlayCircleOutline onClick={playSong} fontSize={bigFont}/> }
           <MdSkipNext className={styles["player-next"]} fontSize={medFont} color={iconColor} onClick={nextSong} />
           <MdOutlineRepeat fontSize={smallFont} color={iconColor}  />
+        </div>
+        <div className={styles["volume-controls"]}>
+          {!muted ? <MdOutlineVolumeUp onClick={onMuteClick} /> : <MdOutlineVolumeOff onClick={onUnmuteClick} />}
+          <input className={styles["slider"]} type={"range"} value={volume} onChange={onVolumeChange}/>
         </div>
       </div>}
     </>

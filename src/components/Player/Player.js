@@ -75,13 +75,6 @@ const Player = () => {
     dispatch(dataActions.openMobilePlayer());
   };
 
-  const mobilePlayerProps = {
-    playSong,
-    pauseSong,
-    prevSong,
-    nextSong
-  }
-
   const onMuteClick = () => {
     setMuted(true);
     audioRef.current.muted = true;
@@ -96,6 +89,18 @@ const Player = () => {
     setVolume(event.target.value);
     audioRef.current.volume = event.target.value/100;
   };
+
+  const mobilePlayerProps = {
+    playSong,
+    pauseSong,
+    prevSong,
+    nextSong,
+    onMuteClick,
+    onUnmuteClick,
+    onVolumeChange,
+    muted,
+    volume
+  }
 
   return (
     <div className={styles["player-container"]} onClick={handlePlayerClick}>

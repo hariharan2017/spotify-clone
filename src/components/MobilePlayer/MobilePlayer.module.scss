@@ -48,6 +48,37 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .volume-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .slider {
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+      cursor: pointer;
+      margin-right: 10%;
+
+      &::-webkit-slider-runnable-track {
+        background: rgb(155, 155, 155);
+        height: 0.25rem;
+      }
+
+      &::-webkit-slider-thumb {
+        box-shadow: 1px 1px 1px #000031;
+        border: 1px solid #00001E;
+        height: 8px;
+        width: 14px;
+        border-radius: 15px;
+        background: #FFFFFF;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -3.5px;
+      }
+    }
+  }
 }
 
 .player_closing {
