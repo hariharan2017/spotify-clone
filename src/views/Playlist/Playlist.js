@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { actions as dataActions } from "../../store/data";
 import SongBanner from "../../components/SongBanner";
 import SongRow from "../../components/SongRow";
+import LoadingSkeleton from "../../components/LoadingSkeleton";
 import styles from "./Playlist.module.scss";
 
 const Playlist = () => {
@@ -11,6 +12,7 @@ const Playlist = () => {
   const { playlistId } = useParams();
 
   const selectedPlaylist = useSelector(state => state.data.userPlaylists.selectedPlaylist);
+  const common = useSelector(state => state.common);
 
   useEffect(() => {
     dispatch(dataActions.getPlaylistData(playlistId));
@@ -48,6 +50,7 @@ const Playlist = () => {
           <div className={styles["table-header"]}>Date Added</div>
           <div className={styles["table-header"]}>Duration</div>
         </div>
+        {common.loading && <LoadingSkeleton type={"row"}/>}
         {selectedPlaylist?.tracks?.items?.map?.((song, index) => {
           return <SongRow key={song?.track?.uri} song={song} index={index} />
         })}

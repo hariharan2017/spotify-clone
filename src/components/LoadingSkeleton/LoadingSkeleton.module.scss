@@ -1,0 +1,27 @@
+.banner-container {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+
+  .image {
+    width: 25%;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+.row-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+
+  .row-item {
+    margin-bottom: 3rem;
+  }
+}
