@@ -11,7 +11,7 @@ export function* getUserTopItems() {
   try {
     const artistResults = yield secureAxios(GET_USER_TOP_ARTISTS);
     const trackResults = yield secureAxios(GET_USER_TOP_TRACKS);
-    yield put(actions.getUserTopItemsSuccess(artistResults, trackResults));
+    yield put(actions.getUserTopItemsSuccess(artistResults.data, trackResults.data));
   } catch (err) {
     console.log(err);
   }

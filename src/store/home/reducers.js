@@ -7,8 +7,8 @@ const homeReducer = (state, action) => {
     case actionTypes.GET_USERS_TOP_ITEMS_SUCCESSFUL:
       return {
         ...state,
-        artists: action.artists,
-        tracks: action.tracks
+        artists: action.artists?.items || [],
+        tracks: action.tracks?.items || []
       };
     default:
       return state;
