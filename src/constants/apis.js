@@ -15,3 +15,7 @@ export const GET_PLAYLIST = "/playlists/{playlist_id}";
 
 //Albums
 export const GET_ALBUM = "/albums/{id}";
+
+//User Top Items
+export const GET_USER_TOP_TRACKS = "/me/top/tracks";
+export const GET_USER_TOP_ARTISTS = "/me/top/artists";

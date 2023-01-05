@@ -4,6 +4,7 @@ import { watcher as testWatcher } from "./test";
 import authWatcher from "./auth/sagas";
 import dataWatcher from "./data/sagas";
 import searchWatcher from "./search/sagas";
+import homeWatcher from "./home/sagas";
 
 export default function* () {
   yield all([
@@ -11,5 +12,6 @@ export default function* () {
     fork(authWatcher),
     fork(dataWatcher),
     fork(searchWatcher),
+    fork(homeWatcher)
   ]);
 }

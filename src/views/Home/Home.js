@@ -1,16 +1,28 @@
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getUri } from "../../helpers/methods";
+import { actions } from "../../store/home";
 import HomeData from "../../data/home.json";
 import Card from "../../components/Card";
 import styles from "./Home.module.scss";
 
 const Home = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const { sections } = HomeData.data.home.sectionContainer;
+  const auth = useSelector(state => state.authentication.auth);
 
   const handleCardClick = (uriId) => {
     navigate(`/playlist/${getUri(uriId)}`);
   };
+
+  useEffect(() => {
+    if(auth.loggedIn) {
+      dispatch(actions.getUserTopItems());
+    }
+  }, [JSON.stringify(auth)]);
 
   return (
     <div className={styles["home-container"]}>

@@ -5,6 +5,7 @@ import { reducers as authReducers } from "./auth";
 import { reducers as spotfiyReducers } from "./spotify";
 import { reducers as dataReducers } from "./data";
 import { reducers as searchReducers } from "./search";
+import { reducers as homeReducers } from "./home";
 
 export default combineReducers({
   test: testReducers,
@@ -12,5 +13,6 @@ export default combineReducers({
   authentication: authReducers,
   spotify: spotfiyReducers,
   data: dataReducers,
-  search: searchReducers
+  search: searchReducers,
+  home: homeReducers
 });
