@@ -1,16 +1,28 @@
-import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { usePalette } from 'react-palette';
 import { getReleaseYear, showHrMinsDuration } from "../../helpers/methods";
+import { actions } from "../../store/common";
 import LoadingSkeleton from "../LoadingSkeleton";
 import styles from "./SongBanner.module.scss";
 
 const SongBanner = ({ type, name, description, owner, followers, releaseDate, totalTracks, duration, image }) => {
+  const dispatch = useDispatch();
+
   const common = useSelector(state => state.common);
+  const { data, loading, error } = usePalette(image);
+
+  useEffect(() => {
+    dispatch(actions.extractedColor(data.vibrant));
+    
+    return () => dispatch(actions.resetColor());
+  }, [JSON.stringify(data)])
 
   if(common.loading) {
     return <LoadingSkeleton type={"banner"} />;
   } else {
     return (
-      <div className={styles["banner-container"]}>
+      <div className={styles["banner-container"]} style={{ backgroundColor: data.vibrant }}>
       <div className={styles["image-container"]}>
         <img className={styles["playlist-banner-image"]} src={image} alt={name}/>
       </div>

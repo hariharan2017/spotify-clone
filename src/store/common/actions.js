@@ -7,3 +7,12 @@ export const loading = () => ({
 export const loadingCompleted = () => ({
   type: actions.LOADING_COMPLETED,
 });
+
+export const extractedColor = (color) => ({
+  type: actions.SET_EXTRACTED_COLOR,
+  color,
+});
+
+export const resetColor = () => ({
+  type: actions.RESET_COLOR,
+});
