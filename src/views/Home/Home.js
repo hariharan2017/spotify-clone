@@ -16,7 +16,7 @@ const Home = () => {
   const auth = useSelector((state) => state.authentication.auth);
   const home = useSelector((state) => state.home);
 
-  const handleCardClick = (uriId) => {
+  const handlePlaylistClick = (uriId) => {
     navigate(`/playlist/${getUri(uriId)}`);
   };
 
@@ -30,31 +30,99 @@ const Home = () => {
     }
   }, [JSON.stringify(auth)]);
 
+  const renderRecentlyPlayed = () => {
+    if (!!home.tracks.length) {
+      return (
+        <div className={styles["section-container"]} key={"recently-played"}>
+          <div className={styles["section-title"]}>{strings.recentPlayed}</div>
+          <div className={styles["section-playlists-container"]}>
+            {home.tracks.map((item) => {
+              const img = item?.album?.images?.[0]?.url;
+              const title = item?.name;
+              const desc = item?.album?.name;
+
+              return (
+                <Card
+                  key={item?.album?.uri}
+                  id={item?.album?.uri}
+                  img={img}
+                  title={title}
+                  desc={desc}
+                  onClick={() => handleAlbumClick(item?.album?.uri)}
+                />
+              );
+            })}
+          </div>
+        </div>
+      );
+    }
+  };
+
+  const renderFeatPlaylists = () => {
+    if (!!home.featPlaylists.length) {
+      return (
+        <div className={styles["section-container"]} key={"featured-playlists"}>
+          <div className={styles["section-title"]}>
+            {strings.featuredPlaylists}
+          </div>
+          <div className={styles["section-playlists-container"]}>
+            {home.featPlaylists.map((item) => {
+              const img = item?.images?.[0]?.url;
+              const title = item?.name;
+              const desc = item?.description;
+
+              return (
+                <Card
+                  key={item?.uri}
+                  id={item?.uri}
+                  img={img}
+                  title={title}
+                  desc={desc}
+                  onClick={() => handlePlaylistClick(item?.uri)}
+                />
+              );
+            })}
+          </div>
+        </div>
+      );
+    }
+  };
+
+  const renderNewReleases = () => {
+    if(!!home.releases.length) {
+      return (
+        <div className={styles["section-container"]} key={"new-releases"}>
+          <div className={styles["section-title"]}>
+            {strings.newReleases}
+          </div>
+          <div className={styles["section-playlists-container"]}>
+            {home.releases.map((item) => {
+              const img = item?.images?.[0]?.url;
+              const title = item?.name;
+              const desc = item?.artists?.[0]?.name;
+
+              return (
+                <Card
+                  key={item?.uri}
+                  id={item?.uri}
+                  img={img}
+                  title={title}
+                  desc={desc}
+                  onClick={() => handleAlbumClick(item?.uri)}
+                />
+              );
+            })}
+          </div>
+        </div>
+      );
+    }
+  }
+
   return (
     <div className={styles["home-container"]}>
-      {!!home.tracks.length && <div className={styles["section-container"]} key={"recently-played"}>
-        <div className={styles["section-title"]}>
-          {strings.recentPlayed}
-        </div>
-        <div className={styles["section-playlists-container"]}>
-          {home.tracks.map((item) => {
-            const img = item?.album?.images?.[0]?.url;
-            const title = item?.name;
-            const desc = item?.album?.name;
-
-            return (
-              <Card
-                key={item?.album?.uri}
-                id={item?.album?.uri}
-                img={img}
-                title={title}
-                desc={desc}
-                onClick={() => handleAlbumClick(item?.album?.uri)}
-              />
-            );
-          })}
-        </div>
-      </div>}
+      {renderRecentlyPlayed()}
+      {renderFeatPlaylists()}
+      {renderNewReleases()}
       {sections.items.map((section) => {
         return (
           <div className={styles["section-container"]} key={section?.uri}>
@@ -78,7 +146,7 @@ const Home = () => {
                     img={img}
                     title={title}
                     desc={desc}
-                    onClick={() => handleCardClick(item?.uri)}
+                    onClick={() => handlePlaylistClick(item?.uri)}
                   />
                 );
               })}

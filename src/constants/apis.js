@@ -19,3 +19,7 @@ export const GET_ALBUM = "/albums/{id}";
 //User Top Items
 export const GET_USER_TOP_TRACKS = "/me/top/tracks";
 export const GET_USER_TOP_ARTISTS = "/me/top/artists";
+
+//Browse
+export const GET_FEATURED_PLAYLISTS = "/browse/featured-playlists";
+export const GET_NEW_RELEASES = "/browse/new-releases";

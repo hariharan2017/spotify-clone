@@ -9,4 +9,6 @@ export const DARK_GREY_COLOR = "rgb(19, 18, 18)";
 
 export const strings = {
   recentPlayed: "Recently Played",
+  featuredPlaylists: "Featured Playlists",
+  newReleases: "New Releases"
 };

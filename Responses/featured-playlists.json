@@ -1,0 +1,517 @@
+{
+  "message": "Editor's picks",
+  "playlists": {
+      "href": "https://api.spotify.com/v1/browse/featured-playlists?country=IN&timestamp=2023-01-05T11%3A58%3A38&offset=0&limit=20",
+      "items": [
+          {
+              "collaborative": false,
+              "description": "Ultimate 101 Punjabi hits with Karan Aujla",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5cZuAHLNjGz"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5cZuAHLNjGz",
+              "id": "37i9dQZF1DX5cZuAHLNjGz",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f000000031a8fd68135f8b08ffbad7573",
+                      "width": null
+                  }
+              ],
+              "name": "Punjabi 101",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY3MTYxMTczOCwwMDAwMDAwMGVhNzNkZjhjNmExODE5MTA0MjkzZTY3YzIzNDY3NzI4",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5cZuAHLNjGz/tracks",
+                  "total": 101
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX5cZuAHLNjGz"
+          },
+          {
+              "collaborative": false,
+              "description": "Hottest Bollywood R&B tunes!",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXdSavJjIP6Fb"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdSavJjIP6Fb",
+              "id": "37i9dQZF1DXdSavJjIP6Fb",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f000000036caf8c414e0b49f1b5be3e91",
+                      "width": null
+                  }
+              ],
+              "name": "Bollywood R&B",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY1NTY5ODQ5NiwwMDAwMDAwMGIzZDViMjE1YzE4ZjFkZDJmNjA4Nzg4YjdkNmZjMDky",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdSavJjIP6Fb/tracks",
+                  "total": 33
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXdSavJjIP6Fb"
+          },
+          {
+              "collaborative": false,
+              "description": "Check out the Latest Love Tunes.\nCover : Vaathi",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWWpLwNv0bd2"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWWpLwNv0bd2",
+              "id": "37i9dQZF1DWWWpLwNv0bd2",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f0000000386f3921888e6ba0844dcae31",
+                      "width": null
+                  }
+              ],
+              "name": "Latest Romance Tamil",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY3MjgxMzEyMCwwMDAwMDAwMDkzMjFiM2YwYzAxZDQ5MTUwM2JlNjRjYTJmNzVlOTUz",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWWpLwNv0bd2/tracks",
+                  "total": 49
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWWWpLwNv0bd2"
+          },
+          {
+              "collaborative": false,
+              "description": "Wakhre Te Athre punjabi tracks. Cover: Shubh",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWStljCmevj7t"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWStljCmevj7t",
+              "id": "37i9dQZF1DWStljCmevj7t",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f00000003d6c02e8b1accdba8521a6d82",
+                      "width": null
+                  }
+              ],
+              "name": "Punjabi Swag",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY3MjczMTgwNiwwMDAwMDAwMGY1ZjgwMDFlNTI2OGY3YzU2N2ZhZjU5YjJlOGJmNjNh",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWStljCmevj7t/tracks",
+                  "total": 102
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWStljCmevj7t"
+          },
+          {
+              "collaborative": false,
+              "description": "Pakka Folk beats from Kollywood!\nCover : Vikram",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXbVipT9CLvYD"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbVipT9CLvYD",
+              "id": "37i9dQZF1DXbVipT9CLvYD",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f00000003472fdff37c90131b922a0f72",
+                      "width": null
+                  }
+              ],
+              "name": "Thara Local",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY3MDU5NDYwMCwwMDAwMDAwMDRlM2UwM2M0M2U0ZjIwMGQ3ODI3MTEzYWMyOTE5N2Yz",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbVipT9CLvYD/tracks",
+                  "total": 45
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXbVipT9CLvYD"
+          },
+          {
+              "collaborative": false,
+              "description": "Best love songs of 2010s from Kollywood.\nCover : OK Kanmani",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVIeFpvRcEQh"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVIeFpvRcEQh",
+              "id": "37i9dQZF1DWVIeFpvRcEQh",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f00000003fa9b4c59ee9b139ddd5e310b",
+                      "width": null
+                  }
+              ],
+              "name": "10s Romance Tamil",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY2OTEwMDQ3OSwwMDAwMDAwMDA1YzJkMDg0M2ViNmQ5YTQ3MTIxN2YyYzVmMTJkMDA5",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVIeFpvRcEQh/tracks",
+                  "total": 133
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWVIeFpvRcEQh"
+          },
+          {
+              "collaborative": false,
+              "description": "Relive the '90s with these beautiful romantic hits. Cover - Dil To Pagal Hai",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXa6iPZDThhLh"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXa6iPZDThhLh",
+              "id": "37i9dQZF1DXa6iPZDThhLh",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f000000032b85b5ae4ae07be7ac019b93",
+                      "width": null
+                  }
+              ],
+              "name": "90s Romance Rewind",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY3MjkxMzg3OCwwMDAwMDAwMDQ4ODQyYzcwM2VkNTZiNjYzZDkxYzNkMTQzYWFlYmQ1",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXa6iPZDThhLh/tracks",
+                  "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXa6iPZDThhLh"
+          },
+          {
+              "collaborative": false,
+              "description": "A classical flavour to Marathi music",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4g8SZwziut9"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4g8SZwziut9",
+              "id": "37i9dQZF1DX4g8SZwziut9",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f000000037ea0c20c8f7a0716dc545c71",
+                      "width": null
+                  }
+              ],
+              "name": "Tu Saptsur",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY2OTA5NDc5NywwMDAwMDAwMDdiZGI0NDNhNzA5YmRiMGVkMTgyMzRmOTI0NmZiZDYz",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4g8SZwziut9/tracks",
+                  "total": 39
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX4g8SZwziut9"
+          },
+          {
+              "collaborative": false,
+              "description": "As local as it gets! Get your jam on with Telugu mass hits!\nCover : Bheemla Nayak",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5ZiKQxiA17z"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5ZiKQxiA17z",
+              "id": "37i9dQZF1DX5ZiKQxiA17z",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f00000003697c53b3a90600a9963906f7",
+                      "width": null
+                  }
+              ],
+              "name": "Pakka Local",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY3MTYzNzM3OCwwMDAwMDAwMDNlNjQ3N2Q2Yjg1YTc5MmUzZjA1MDg2YWJhMDdlMzIw",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5ZiKQxiA17z/tracks",
+                  "total": 65
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX5ZiKQxiA17z"
+          },
+          {
+              "collaborative": false,
+              "description": "Here comes the Maestro with his best of 90s!",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7k1b9eIxnmB"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7k1b9eIxnmB",
+              "id": "37i9dQZF1DX7k1b9eIxnmB",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f00000003757535fb098572b989be2d4f",
+                      "width": null
+                  }
+              ],
+              "name": "Raaja Rules 90s",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY2ODY3MzA2NiwwMDAwMDAwMDBjMWEyNzc1NWI0ZTViN2E3N2U3YWUwMmY5OTIwMGEx",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7k1b9eIxnmB/tracks",
+                  "total": 105
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX7k1b9eIxnmB"
+          },
+          {
+              "collaborative": false,
+              "description": "Evergreen hits of AR Rahman",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX695EFn59me7"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX695EFn59me7",
+              "id": "37i9dQZF1DX695EFn59me7",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f00000003924086badbadfeb92282b375",
+                      "width": null
+                  }
+              ],
+              "name": "Rahman Retrospective",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY0MTgwOTg3NiwwMDAwMDAwMDZiYzI4NmU1YjZjOGYwOTlkYWRkNmM2NTc1MjNkY2U4",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX695EFn59me7/tracks",
+                  "total": 45
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX695EFn59me7"
+          },
+          {
+              "collaborative": false,
+              "description": "Best of 70s from Kollywood\nCover : MGR",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWTxyFwnewdpu"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTxyFwnewdpu",
+              "id": "37i9dQZF1DWTxyFwnewdpu",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f00000003be8ba2189ee28caeacb20e40",
+                      "width": null
+                  }
+              ],
+              "name": "All Out 70s Tamil",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY2NTkxOTEzOCwwMDAwMDAwMGIzYmU4ZTk4OTFiODZjYWQxNzA5ZjQ2MDFhNWI0ZDdi",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTxyFwnewdpu/tracks",
+                  "total": 106
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWTxyFwnewdpu"
+          },
+          {
+              "collaborative": false,
+              "description": "Best of 80s from Tollywood\nCover : Chiranjeevi",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXd4CGEcEyADN"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXd4CGEcEyADN",
+              "id": "37i9dQZF1DXd4CGEcEyADN",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f0000000397dcbc62fee1b701ab680209",
+                      "width": null
+                  }
+              ],
+              "name": "All Out 80s Telugu",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTYzMTc4OTc4NywwMDAwMDAwMDE2ZTM5YjY5Njk1YTNkM2FkYTk1YTQwZGJhZTFkNmJi",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXd4CGEcEyADN/tracks",
+                  "total": 94
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXd4CGEcEyADN"
+          },
+          {
+              "collaborative": false,
+              "description": "Unwind to the real beauty of Instrumentals!",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4UE2DqdZFBH"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4UE2DqdZFBH",
+              "id": "37i9dQZF1DX4UE2DqdZFBH",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f0000000357f26a64464afe42c043ea19",
+                      "width": null
+                  }
+              ],
+              "name": "Indie Instrumental",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY2ODY3MDE2MiwwMDAwMDAwMDgwYzdkYTNlYTAwYjc2YTliZDMxMjFmMzcyOTMyODcw",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4UE2DqdZFBH/tracks",
+                  "total": 121
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX4UE2DqdZFBH"
+          }
+      ],
+      "limit": 20,
+      "next": null,
+      "offset": 0,
+      "previous": null,
+      "total": 14
+  }
+}

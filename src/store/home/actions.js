@@ -7,5 +7,15 @@ export const getUserTopItems = () => ({
 export const getUserTopItemsSuccess = (artists, tracks) => ({
   type: action.GET_USERS_TOP_ITEMS_SUCCESSFUL,
   artists,
-  tracks
+  tracks,
+});
+
+export const getFeaturedPlaylistsSuccess = (response) => ({
+  type: action.GET_FEATURED_PLAYLISTS_SUCCESS,
+  response,
+});
+
+export const getNewReleasesSuccess = (response) => ({
+  type: action.GET_NEW_RELEASES_SUCCESS,
+  response,
 });
