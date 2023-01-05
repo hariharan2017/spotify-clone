@@ -36,17 +36,13 @@ const songReducer = (state, action) => {
   switch (action.type) {
     case actionTypes.SELECT_SONG:
 
-      if (action.songType === PLAYLIST_SONG) {
-        total = action.selectedCategory?.tracks?.items?.length || 0;
-        action.selectedCategory?.tracks?.items?.forEach((song, idx) => {
-          if(action.songUri === song?.track?.uri) {
-            next = idx != total ? action.selectedCategory?.tracks?.items?.[idx+1] : action.selectedCategory?.tracks?.items?.[0];
-            prev = idx != 0 ? action.selectedCategory?.tracks?.items?.[idx-1] : action.selectedCategory?.tracks?.items?.[total-1];
-          }
-        });
-      } else if (action.songType === ALBUM_SONG) {
-        console.log(action.selectedCategory);
-      }
+      total = action.selectedCategory?.tracks?.items?.length || 0;
+      action.selectedCategory?.tracks?.items?.forEach((song, idx) => {
+        if(action.songUri === (song?.track?.uri || song?.uri)) {
+          next = idx != total ? action.selectedCategory?.tracks?.items?.[idx+1] : action.selectedCategory?.tracks?.items?.[0];
+          prev = idx != 0 ? action.selectedCategory?.tracks?.items?.[idx-1] : action.selectedCategory?.tracks?.items?.[total-1];
+        }
+      });
 
       return {
         ...state,
@@ -66,12 +62,19 @@ const songReducer = (state, action) => {
             prev = idx != 0 ? action.selectedPlaylist?.tracks?.items?.[idx-1] : action.selectedPlaylist?.tracks?.items?.[total-1];
           }
         })
+      } else if (state.songType === ALBUM_SONG) {
+        total = action.selectedAlbum?.tracks?.items?.length || 0;
+        action.selectedAlbum?.tracks?.items?.forEach((song, idx) => {
+          if(state.prevSong?.uri === song?.uri) {
+            prev = idx != 0 ? action.selectedAlbum?.tracks?.items?.[idx-1] : action.selectedAlbum?.tracks?.items?.[total-1];
+          }
+        })
       }
 
       return {
         ...state,
         nextSong: state.song,
-        currentSong: state.prevSong?.track?.uri,
+        currentSong: state.prevSong?.track?.uri || state.prevSong?.uri,
         song: state.prevSong,
         songUrl: state.prevSong?.track?.preview_url,
         prevSong: prev,
@@ -85,12 +88,19 @@ const songReducer = (state, action) => {
             next = idx+1 != total ? action.selectedPlaylist?.tracks?.items?.[idx+1] : action.selectedPlaylist?.tracks?.items?.[0];
           }
         })
-      }
+      } else if (state.songType === ALBUM_SONG) {
+        total = action.selectedAlbum?.tracks?.items?.length || 0;
+        action.selectedAlbum?.tracks?.items?.forEach((song, idx) => {
+          if(state.nextSong?.uri === song?.uri) {
+            next = idx+1 != total ? action.selectedAlbum?.tracks?.items?.[idx+1] : action.selectedAlbum?.tracks?.items?.[0];
+          }
+        })
+      } 
 
       return {
         ...state,
         prevSong: state.song,
-        currentSong: state.nextSong?.track?.uri,
+        currentSong: state.nextSong?.track?.uri || state.nextSong?.uri,
         song: state.nextSong,
         songUrl: state.nextSong?.track?.preview_url,
         nextSong: next,
