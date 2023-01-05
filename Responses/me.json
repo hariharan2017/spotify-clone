@@ -1,0 +1,21 @@
+{
+  "display_name": "Ren A",
+  "external_urls": {
+      "spotify": "https://open.spotify.com/user/31s563ov3zelgcc7fqdfvllrd6pm"
+  },
+  "followers": {
+      "href": null,
+      "total": 0
+  },
+  "href": "https://api.spotify.com/v1/users/31s563ov3zelgcc7fqdfvllrd6pm",
+  "id": "31s563ov3zelgcc7fqdfvllrd6pm",
+  "images": [
+      {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab6775700000ee85c5114c945df3a40c5c0e89a0",
+          "width": null
+      }
+  ],
+  "type": "user",
+  "uri": "spotify:user:31s563ov3zelgcc7fqdfvllrd6pm"
+}

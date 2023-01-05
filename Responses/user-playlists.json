@@ -1,0 +1,586 @@
+{
+  "href": "https://api.spotify.com/v1/users/31s563ov3zelgcc7fqdfvllrd6pm/playlists?offset=0&limit=20",
+  "items": [
+      {
+          "collaborative": false,
+          "description": "The essential tracks from LiSA. アニメシーンから世界へと羽ばたく歌姫、LiSAのオールタイム・ベスト!",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX01AtpaIYjQE"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX01AtpaIYjQE",
+          "id": "37i9dQZF1DX01AtpaIYjQE",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://i.scdn.co/image/ab67706f00000003bfc2d2bbb3adc49545ca5991",
+                  "width": null
+              }
+          ],
+          "name": "This Is LiSA",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "MTY2ODc2Mjc5MSwwMDAwMDAwMGEzMDg4ZTlmNzJkNjA0MmUwNTc5YTFiZTYyOThhOTEw",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX01AtpaIYjQE/tracks",
+              "total": 88
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DX01AtpaIYjQE"
+      },
+      {
+          "collaborative": false,
+          "description": "This is Aimer. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO02uS96"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO02uS96",
+          "id": "37i9dQZF1DZ06evO02uS96",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO02uS96-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is Aimer",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzUsMDAwMDAwMDAzNTI4ZGQ4NzZlYWI2MTgyN2M4ZWQwYWUxMzA0ODFhNQ==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO02uS96/tracks",
+              "total": 50
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO02uS96"
+      },
+      {
+          "collaborative": false,
+          "description": "One-of-a-kind Japanese composer/arranger/musician/lyricist/pianist, best known for his works on many anime series, television dramas, and films. 代表作「進撃の巨人」シリーズ劇伴をはじめ、数々の名曲を世界に送り出している音楽家。SawanoHiroyuki[nZk]名義でも精力的に活動中。",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX78L8foCBod1"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX78L8foCBod1",
+          "id": "37i9dQZF1DX78L8foCBod1",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://i.scdn.co/image/ab67706f00000003b98c79b63ad555a65d218ad5",
+                  "width": null
+              }
+          ],
+          "name": "澤野弘之 Hiroyuki Sawano Works",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "MTY3MTU0ODQwMCwwMDAwMDAwMDVkNjJkZGU0ZjE5ZDBlYzMzMzlmODM3NWZmODVjZDUw",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX78L8foCBod1/tracks",
+              "total": 70
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DX78L8foCBod1"
+      },
+      {
+          "collaborative": false,
+          "description": "スリーピースバンドの枠から自らを意識的に解き放ち、激しくも繊細な音世界を表現し続けるTK from 凛として時雨の軌跡がここに。Immerse yourself in the kaleidoscope world of TK from Ling tosite sigure.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWwPz6HmZIAM"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWwPz6HmZIAM",
+          "id": "37i9dQZF1DWWwPz6HmZIAM",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://i.scdn.co/image/ab67706f000000031b2687bc7d99e6bee930cb02",
+                  "width": null
+              }
+          ],
+          "name": "This Is TK from 凛として時雨 (TK from Ling tosite sigure)",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "MTY3MTU0ODQwMCwwMDAwMDAwMDNmN2Q5ZWI1NmY2ZTYzZDEwMjg0NjQ0ZGUxNzRhNDQx",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWwPz6HmZIAM/tracks",
+              "total": 54
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DWWwPz6HmZIAM"
+      },
+      {
+          "collaborative": false,
+          "description": "This is yanaginagi. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0AjiWN"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0AjiWN",
+          "id": "37i9dQZF1DZ06evO0AjiWN",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO0AjiWN-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is yanaginagi",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzQsMDAwMDAwMDA0Y2NlNWJkZmQwMzVmZDAyYjZiMTU2M2IyYTk4MTZlMA==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0AjiWN/tracks",
+              "total": 50
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO0AjiWN"
+      },
+      {
+          "collaborative": false,
+          "description": "This is EGOIST. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO07DtzR"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO07DtzR",
+          "id": "37i9dQZF1DZ06evO07DtzR",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO07DtzR-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is EGOIST",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzQsMDAwMDAwMDA2NmExMGM0YzU0YjhhOGM0Y2I4YTcxYWVhM2E5NjQzZA==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO07DtzR/tracks",
+              "total": 50
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO07DtzR"
+      },
+      {
+          "collaborative": false,
+          "description": "This is GARNiDELiA. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO4BYKv0"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO4BYKv0",
+          "id": "37i9dQZF1DZ06evO4BYKv0",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO4BYKv0-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is GARNiDELiA",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzQsMDAwMDAwMDBmM2Y0OGU0MWQ0MDQ4NzM1YjUzM2YzNTQwN2I5YTY0Mw==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO4BYKv0/tracks",
+              "total": 51
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO4BYKv0"
+      },
+      {
+          "collaborative": false,
+          "description": "This is ReoNa. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1F3ObS"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO1F3ObS",
+          "id": "37i9dQZF1DZ06evO1F3ObS",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO1F3ObS-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is ReoNa",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzQsMDAwMDAwMDA5ZjBjYzg4ZDFmNDIyZjM5MGFkYjIyMTg3NWEyZGVlYg==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO1F3ObS/tracks",
+              "total": 48
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO1F3ObS"
+      },
+      {
+          "collaborative": false,
+          "description": "This is ClariS. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO36zBDs"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO36zBDs",
+          "id": "37i9dQZF1DZ06evO36zBDs",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO36zBDs-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is ClariS",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzQsMDAwMDAwMDAxYzdhNmEzZDA2NTBkMDE1YmMzY2IzNWYxZGUxMjcxNw==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO36zBDs/tracks",
+              "total": 50
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO36zBDs"
+      },
+      {
+          "collaborative": false,
+          "description": "This is Eir Aoi. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0BRqs5"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0BRqs5",
+          "id": "37i9dQZF1DZ06evO0BRqs5",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO0BRqs5-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is Eir Aoi",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzQsMDAwMDAwMDA0OTAzOWY0YWI1MWYxYzYyNjM1YzcyYWVhNGQ3ZWU5ZA==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0BRqs5/tracks",
+              "total": 51
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO0BRqs5"
+      },
+      {
+          "collaborative": false,
+          "description": "This is Mili. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0ncKtr"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0ncKtr",
+          "id": "37i9dQZF1DZ06evO0ncKtr",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO0ncKtr-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is Mili",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzQsMDAwMDAwMDBhNDQ5YTk3N2NlMDBmNTVmNjQ0NGUwM2UxMTNiMzQ2Yg==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0ncKtr/tracks",
+              "total": 50
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO0ncKtr"
+      },
+      {
+          "collaborative": false,
+          "description": "This is Linked Horizon. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1SlEIw"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO1SlEIw",
+          "id": "37i9dQZF1DZ06evO1SlEIw",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO1SlEIw-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is Linked Horizon",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzQsMDAwMDAwMDA1MjQxNjZhYjIyZjUyNGRjMzYwOWIyZDU3NTExYzllMQ==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO1SlEIw/tracks",
+              "total": 24
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO1SlEIw"
+      },
+      {
+          "collaborative": false,
+          "description": "This is Cö Shu Nie. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0o0NvX"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0o0NvX",
+          "id": "37i9dQZF1DZ06evO0o0NvX",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO0o0NvX-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is Cö Shu Nie",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzQsMDAwMDAwMDA1ZjZmZGJkYjBhNWE3OWZmNWRjODJiMDUyNWFmZTdjNQ==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0o0NvX/tracks",
+              "total": 34
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO0o0NvX"
+      },
+      {
+          "collaborative": false,
+          "description": "This is BLUE ENCOUNT. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0UgoLe"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0UgoLe",
+          "id": "37i9dQZF1DZ06evO0UgoLe",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO0UgoLe-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is BLUE ENCOUNT",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzQsMDAwMDAwMDAxNmIwZTAwNGUzODI3N2FlOTEzOTAzMDgyOTdkODM4Nw==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0UgoLe/tracks",
+              "total": 51
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO0UgoLe"
+      },
+      {
+          "collaborative": false,
+          "description": "This is Maaya Sakamoto. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO2GlwF5"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO2GlwF5",
+          "id": "37i9dQZF1DZ06evO2GlwF5",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO2GlwF5-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is Maaya Sakamoto",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzQsMDAwMDAwMDA1M2Q0ZDMwZGIxOTY4OTAzNDNmOGEyZGU4ZDcwM2Q0OA==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO2GlwF5/tracks",
+              "total": 50
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO2GlwF5"
+      },
+      {
+          "collaborative": false,
+          "description": "This is UVERworld. The essential tracks, all in one playlist.",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3KBMI1"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO3KBMI1",
+          "id": "37i9dQZF1DZ06evO3KBMI1",
+          "images": [
+              {
+                  "height": null,
+                  "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO3KBMI1-large.jpg",
+                  "width": null
+              }
+          ],
+          "name": "This Is UVERworld",
+          "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc4ODA3MzQsMDAwMDAwMDBlMWE1YzVkY2NkNDQyNjM5OWZhNmUyMmJiOWMzN2I0Zg==",
+          "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO3KBMI1/tracks",
+              "total": 50
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO3KBMI1"
+      }
+  ],
+  "limit": 20,
+  "next": null,
+  "offset": 0,
+  "previous": null,
+  "total": 16
+}
