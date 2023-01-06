@@ -16,9 +16,11 @@ const Player = () => {
 
   const [volume, setVolume] = useState(100);
   const [muted, setMuted] = useState(false);
+  const [currTime, setCurrTime] = useState(0);
+  const [duration, setDuration] = useState(0);
 
   const audioRef = useRef(null);
-  
+
   useEffect(() => {
     if(audioRef.current && (songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"])) {
       !audioRef.current.paused && audioRef.current.pause();
@@ -26,6 +28,9 @@ const Player = () => {
 
     audioRef.current = new Audio(songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"]);
     audioRef.current.volume = volume/100;
+    audioRef.current.ontimeupdate = handleTimeUpdate;
+    setDuration((songData?.song?.track?.duration_ms || songData?.song?.duration_ms));
+
     dispatch(dataActions.playSong());
     audioRef.current.play();
 
@@ -86,6 +91,10 @@ const Player = () => {
     audioRef.current.volume = event.target.value/100;
   };
 
+  const handleTimeUpdate = () => {
+    setCurrTime(audioRef.current?.currentTime);
+  }
+
   const mobilePlayerProps = {
     playSong,
     pauseSong,
@@ -116,7 +125,7 @@ const Player = () => {
           <MdSkipNext className={styles["player-next"]} fontSize={medFont} color={iconColor} onClick={nextSong} />
           <MdOutlineRepeat fontSize={medFont} color={iconColor}  />
         </div>
-        <ProgressBar backgroundColor={"white"} duration={(songData?.song?.track?.duration_ms || 1000)/10000} completed={(audioRef.current?.currentTime || 0)}/>
+        <ProgressBar backgroundColor={"white"} completed={currTime*1000} duration={duration}/>
       </div>
       <div className={styles["volume-controls"]}>
           {!muted ? <MdOutlineVolumeUp onClick={onMuteClick} /> : <MdOutlineVolumeOff onClick={onUnmuteClick} />}
