@@ -14,12 +14,12 @@ const Sidebar = () => {
   const sideMenu1 = [
     { icon: <MdHome className={iconStyle} />, label: "Home", onClick: () => navigate("/")},
     { icon: <MdSearch className={iconStyle} />, label: "Search", onClick: () => navigate("/search")},
-    { icon: <MdLibraryMusic className={iconStyle} />, label: "Your Library"},
+    // { icon: <MdLibraryMusic className={iconStyle} />, label: "Your Library"},
   ]
   
   const sideMenu2 = [
-    { icon: <MdPlaylistAdd className={iconStyle} />, label: "Create Playlist"},
-    { icon: <MdFavoriteBorder className={iconStyle} />, label: "Liked Songs"},
+    // { icon: <MdPlaylistAdd className={iconStyle} />, label: "Create Playlist"},
+    // { icon: <MdFavoriteBorder className={iconStyle} />, label: "Liked Songs"},
   ]
 
   const handlePlaylistItem = (item) => {
