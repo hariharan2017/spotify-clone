@@ -42,7 +42,7 @@ const Topbar = () => {
       </div>}
       {auth?.loggedIn && <div className={styles["profile-container"]}>
         <img className={styles["profile-image"]} src={profile?.images?.[0]?.url} alt="Profile Image"/>
-        <label classNcame={styles["profile-name"]} style={{ margin: "5px" }}>{profile?.["display_name"]}</label>
+        <label className={styles["profile-name"]}>{profile?.["display_name"]}</label>
         <div style={{ padding: "10px", cursor: "pointer" }} onClick={handleLogout}>Logout</div>
       </div>}
     </div>

@@ -19,21 +19,17 @@ const Player = () => {
 
   const audioRef = useRef(null);
   
-  const onSongEnd = () => {
-    dispatch(dataActions.pauseSong());
-    audioRef.current.load(songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"]);
-  }
-
   useEffect(() => {
     if(audioRef.current && (songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"])) {
       !audioRef.current.paused && audioRef.current.pause();
     }
 
     audioRef.current = new Audio(songData?.song?.track?.["preview_url"] || songData?.song?.["preview_url"]);
+    audioRef.current.volume = volume/100;
     dispatch(dataActions.playSong());
     audioRef.current.play();
 
-    audioRef.current.onended = onSongEnd;
+    audioRef.current.onended = nextSong;
 
     return () => {
       if(audioRef.current && !audioRef.current.paused) {
@@ -128,6 +124,7 @@ const Player = () => {
         <MdOutlineClose onClick={handleClose}/>
       </div>
       <MobilePlayer audio={audioRef} {...mobilePlayerProps} />
+      <audio ref={audioRef} />
     </div>
   );
 };
