@@ -5,14 +5,15 @@
   width: 100%;
 
   .song-progress-label {
-    color: white;
+    font-size: 0.75rem;
+    color: #a7a7a7;
     background-color: #181818;
   }
 
   .progress-bar-parent {
     display: flex;
     align-items: center;
-    height: 10px;
+    height: 5px;
     width: 50%;
     background-color: rgb(94, 92, 95);
     border-radius: 10px;
