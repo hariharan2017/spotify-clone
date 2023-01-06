@@ -109,7 +109,9 @@ const Player = () => {
     onUnmuteClick,
     onVolumeChange,
     muted,
-    volume
+    volume,
+    currTime,
+    duration
   }
 
   return (
