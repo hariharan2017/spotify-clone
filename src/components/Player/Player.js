@@ -78,11 +78,13 @@ const Player = () => {
 
   const onMuteClick = () => {
     setMuted(true);
+    setVolume(0);
     audioRef.current.muted = true;
   };
 
   const onUnmuteClick = () => {
     setMuted(false);
+    setVolume(100);
     audioRef.current.muted = false;
   };
 
