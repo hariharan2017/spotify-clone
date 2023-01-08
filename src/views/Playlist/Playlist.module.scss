@@ -73,6 +73,10 @@ $row-duration: 0.12;
 }
 
 @media screen and (max-width: 720px) {
+  .playlist-container {
+    padding-bottom: 3rem;
+  }
+
   .songs-container {
     .table-header-container {
       display: none;

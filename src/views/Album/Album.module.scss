@@ -56,6 +56,8 @@ $row-duration: 0.12;
 
 @media screen and (max-width: 720px) {
   .album-container {
+    padding-bottom: 3rem;
+
     .songs-container {
       .table-header-container {
         display: none;

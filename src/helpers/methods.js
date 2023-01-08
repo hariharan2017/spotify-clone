@@ -44,7 +44,7 @@ const monthToLabel = {
 
 export const getReadableDate = (date) => {
   const dt = new Date(date);
-  return monthToLabel[dt.getMonth()+1] + " " + dt.getUTCDate() + ", " + dt.getFullYear();
+  return date ? monthToLabel[dt.getMonth()+1] + " " + dt.getUTCDate() + ", " + dt.getFullYear() : null;
 }
 
 export const getDaysAgo = (date) => {
