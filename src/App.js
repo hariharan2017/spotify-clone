@@ -18,6 +18,7 @@ const Playlist = lazy(() => import("./views/Playlist"));
 const Album = lazy(() => import("./views/Album"));
 const Search = lazy(() => import("./views/Search"));
 const Library = lazy(() => import("./views/Library"));
+const Category = lazy(() => import("./views/Category"));
 
 const spotify = new SpotifyWebApi();
 
@@ -62,6 +63,7 @@ function App() {
             <Route path="/album/:albumId" element={<Album />} />
             <Route path="/search" element={<Search />} />
             <Route path="/library" element={<Library />} />
+            <Route path="/category/:categoryId" element={<Category />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Suspense>

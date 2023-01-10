@@ -6,5 +6,15 @@ export const getCategories = () => ({
 
 export const getCategoriesSuccess = (categories) => ({
   type: action.FETCH_CATEGORIES_SUCCESS,
-  categories
+  categories,
+});
+
+export const getSingleCategory = (categoryId) => ({
+  type: action.FETCH_SINGLE_CATEGORY,
+  categoryId
+});
+
+export const getSingleCategorySuccess = (category) => ({
+  type: action.FETCH_SINGLE_CATEGORY_SUCCESS,
+  category,
 });
