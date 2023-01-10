@@ -23,3 +23,6 @@ export const GET_USER_TOP_ARTISTS = "/me/top/artists";
 //Browse
 export const GET_FEATURED_PLAYLISTS = "/browse/featured-playlists";
 export const GET_NEW_RELEASES = "/browse/new-releases";
+
+//Search
+export const GET_SEARCH_RESULTS = "/search";

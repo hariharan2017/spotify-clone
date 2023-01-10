@@ -18,3 +18,13 @@ export const getSingleCategorySuccess = (category) => ({
   type: action.FETCH_SINGLE_CATEGORY_SUCCESS,
   category,
 });
+
+export const getSearchResults = (search) => ({
+  type: action.FETCH_SEARCH_RESULTS,
+  search
+});
+
+export const getSearchResultsSuccess = (response) => ({
+  type: action.FETCH_SEARCH_RESULTS_SUCCESS,
+  response
+});
