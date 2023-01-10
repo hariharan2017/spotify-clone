@@ -61,3 +61,11 @@ export const getDaysAgo = (date) => {
 export const getReleaseYear = (date) => {
   return new Date(date).getFullYear();
 }
+
+export const debounce = (cb, delay = 500) => {
+  let timer;
+  return function (...args) {
+    if(timer) clearTimeout(timer);
+    timer = setTimeout(() => cb(...args), delay);
+  }
+}
