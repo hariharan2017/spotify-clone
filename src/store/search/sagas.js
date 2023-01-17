@@ -9,7 +9,7 @@ export function* getSearchResults ({ search }) {
   try {
     if(search) {
       const result = yield secureAxios(GET_SEARCH_RESULTS+`?q=${search}`+"&type=album,playlist,track");
-      console.log(result.data);
+      yield put(actions.getSearchResultsSuccess(result.data));
     }
   } catch (err) {
     console.log(err);
