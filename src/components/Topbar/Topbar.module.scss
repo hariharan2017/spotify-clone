@@ -1,5 +1,6 @@
 .topbar-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   // background-color: rgb(19 18 18);
   color: white;
@@ -72,11 +73,16 @@
 
 @media screen and (max-width: 720px) {
   .topbar-container {
-    justify-content: flex-end;
     min-height: 3rem;
 
     .topbar-icons-container {
       display: none;
+    }
+
+    .topbar-search-container {
+      & > input {
+        width: 100%;
+      }
     }
 
     .topbar-buttons-container {
@@ -86,6 +92,11 @@
     .profile-container {
       height: 30px;
       font-size: 0.7rem;
+      
+      .profile-name {
+        font-size: 0.8rem;
+        white-space: nowrap;
+      }
     } 
   }
 }

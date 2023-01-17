@@ -6,6 +6,7 @@ import { actions as commonActions } from "../../store/common";
 import { actions as searchActions } from "../../store/search";
 import { searchTabs } from "./config";
 import { tabIds } from "../../constants/constants";
+import classNames from "classnames";
 import Button from "../../components/Button";
 import Card from "../../components/Card";
 import styles from "./Search.module.scss";
@@ -103,7 +104,7 @@ const Search = () => {
   }
 
   return (
-    <div className={styles["search-container"]}>
+    <div className={classNames(styles["search-container"], searchData?.searchResults ? styles["card-list"] : styles["category-list"])}>
       {!searchData?.searchResults &&
         searchData?.categories?.map((item) => {
           return (
@@ -117,9 +118,9 @@ const Search = () => {
             </div>
           );
         })}
-      <div className={styles["search-tabs"]}>
-        {searchData?.searchResults &&
-          searchTabs.map((tab) => {
+      {searchData?.searchResults && (
+        <div className={styles["search-tabs"]}>
+          {searchTabs.map((tab) => {
             return (
               <Button
                 className={[styles["tab-style"]]}
@@ -131,7 +132,8 @@ const Search = () => {
               </Button>
             );
           })}
-      </div>
+        </div>
+      )}
       {renderSearchAlbums()}
       {renderSearchPlaylists()}
     </div>

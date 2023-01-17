@@ -50,6 +50,12 @@
   }
 }
 
+.category-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 @media screen and (max-width: 720px) {
   .search-container {
     padding-bottom: 3rem;
