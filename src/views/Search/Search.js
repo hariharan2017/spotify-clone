@@ -59,6 +59,31 @@ const Search = () => {
     }
   };
 
+  const renderSearchPlaylists = () => {
+    if (!!search?.searchResults?.playlists) {
+      return (
+        <div className={styles["section-container"]}>
+          {search?.searchResults?.playlists?.items?.map((playlist) => {
+            const img = playlist?.images?.[0]?.url;
+            const title = playlist?.name;
+            const desc = "By " + playlist?.owner?.display_name;
+
+            return (
+              <Card
+                key={playlist?.uri}
+                id={playlist?.uri}
+                img={img}
+                title={title}
+                desc={desc}
+                onClick={() => handlePlaylistClick(playlist?.uri)}
+              />
+            );
+          })}
+        </div>
+      );
+    }
+  }
+
   return (
     <div className={styles["search-container"]}>
       {!search?.searchResults && search?.categories?.map((item) => {
@@ -69,6 +94,7 @@ const Search = () => {
         )
       })}
       {renderSearchAlbums()}
+      {renderSearchPlaylists()}
     </div>
   );
 };
