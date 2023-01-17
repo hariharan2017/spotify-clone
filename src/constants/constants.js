@@ -12,3 +12,9 @@ export const strings = {
   featuredPlaylists: "Featured Playlists",
   newReleases: "New Releases"
 };
+
+export const tabIds = {
+  all: "all",
+  albums: "albums",
+  playlists: "playlists"
+}

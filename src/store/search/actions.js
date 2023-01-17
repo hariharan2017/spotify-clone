@@ -11,7 +11,7 @@ export const getCategoriesSuccess = (categories) => ({
 
 export const getSingleCategory = (categoryId) => ({
   type: action.FETCH_SINGLE_CATEGORY,
-  categoryId
+  categoryId,
 });
 
 export const getSingleCategorySuccess = (category) => ({
@@ -21,10 +21,20 @@ export const getSingleCategorySuccess = (category) => ({
 
 export const getSearchResults = (search) => ({
   type: action.FETCH_SEARCH_RESULTS,
-  search
+  search,
 });
 
 export const getSearchResultsSuccess = (response) => ({
   type: action.FETCH_SEARCH_RESULTS_SUCCESS,
-  response
+  response,
+});
+
+export const changeSearchParam = (search) => ({
+  type: action.CHANGE_SEARCH_TERM,
+  search,
+});
+
+export const changeTab = (tab) => ({
+  type: action.CHANGE_TAB,
+  tab,
 });

@@ -1,3 +1,5 @@
+import { combineReducers } from "redux";
+import { tabIds } from "../../constants/constants";
 import * as actionTypes from "./types";
 
 const searchReducer = (state, action) => {
@@ -24,4 +26,26 @@ const searchReducer = (state, action) => {
   }
 };
 
-export default searchReducer;
+const searchPageDataReducer = (state, action) => {
+  state = state || { searchParam: "", tab: tabIds.all };
+
+  switch (action.type) {
+    case actionTypes.CHANGE_SEARCH_TERM:
+      return {
+        ...state,
+        searchParam: action.searchParam,
+      };
+    case actionTypes.CHANGE_TAB:
+      return {
+        ...state,
+        tab: action.tab,
+      };
+    default:
+      return state;
+  }
+};
+
+export default combineReducers({
+  searchData: searchReducer,
+  searchPageData: searchPageDataReducer
+});
