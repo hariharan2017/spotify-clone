@@ -6,7 +6,6 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { actions as authActions } from "../../store/auth";
 import { actions as dataActions } from "../../store/data";
 import { actions as searchActions } from "../../store/search";
-import { actions as commonActions } from "../../store/common";
 import { debounce } from "../../helpers/methods";
 import { DARK_GREY_COLOR } from "../../constants/constants";
 import Button from "../Button";
@@ -24,12 +23,6 @@ const Topbar = () => {
   const searchVisibility = useSelector(state => state.common.searchVisibility)
 
   const [search, setSearch] = useState("");
-
-  useEffect(() => {
-    dispatch(commonActions.showSearchBar());
-
-    return () => dispatch(commonActions.hideSearchBar());
-  }, [])
 
   useEffect(() => {
     if(auth?.token) {

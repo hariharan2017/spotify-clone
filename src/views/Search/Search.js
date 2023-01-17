@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getUri, getReleaseYear } from "../../helpers/methods";
+import { actions as commonActions } from "../../store/common";
 import { actions as searchActions } from "../../store/search";
 import Card from "../../components/Card";
 import styles from "./Search.module.scss";
@@ -12,7 +13,12 @@ const Search = () => {
   const search = useSelector(state => state.search);
 
   useEffect(() => {
+    dispatch(commonActions.showSearchBar());
     dispatch(searchActions.getCategories());
+
+    return () => {
+      dispatch(commonActions.hideSearchBar());
+    }
   }, []);
 
   const handleCategoryClick = (item) => {
