@@ -33,7 +33,7 @@ const searchPageDataReducer = (state, action) => {
     case actionTypes.CHANGE_SEARCH_TERM:
       return {
         ...state,
-        searchParam: action.searchParam,
+        searchParam: action.search,
       };
     case actionTypes.CHANGE_TAB:
       return {

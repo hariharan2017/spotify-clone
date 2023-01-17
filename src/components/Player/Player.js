@@ -137,7 +137,7 @@ const Player = () => {
       <div className={styles["volume-controls"]}>
           {!muted ? <MdOutlineVolumeUp onClick={onMuteClick} /> : <MdOutlineVolumeOff onClick={onUnmuteClick} />}
           <input className={styles["slider"]} type={"range"} value={volume} onChange={onVolumeChange}/>
-        <MdOutlineClose onClick={handleClose}/>
+        {/* <MdOutlineClose onClick={handleClose}/> */}
       </div>
       <MobilePlayer audio={audioRef} {...mobilePlayerProps} />
       <audio ref={audioRef} />
