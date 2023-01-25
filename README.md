@@ -12,8 +12,8 @@ Made a fully responsive Spotify Clone with React, JavaScript, SASS, Redux, Saga
 - Application can search for Albums and playlists created by other users
 - Implemented Code Splitting to improve performance
 
-
+<br></br>
 Test Credentials
 
-Email - test1267@gmail.com
-Password - test1267
+- Email - test1267@gmail.com
+- Password - test1267
