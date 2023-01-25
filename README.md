@@ -1,6 +1,6 @@
 # Spotify Clone
 
-Website Link - https://spotify-clone-29be3.netlify.app/#
+Website Link - https://spotify-clone-29be3.netlify.app
 
 Made a fully responsive Spotify Clone with React, JavaScript, SASS, Redux, Saga
 
