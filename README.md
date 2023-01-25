@@ -13,6 +13,9 @@ Made a fully responsive Spotify Clone with React, JavaScript, SASS, Redux, Saga
 - Implemented Code Splitting to improve performance
 
 <br></br>
+Note: Some songs might not work as songs are fetched from Spotify API and some of them might be down
+
+<br></br>
 Test Credentials
 
 - Email - test1267@gmail.com
