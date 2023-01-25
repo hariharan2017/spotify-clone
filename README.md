@@ -11,3 +11,9 @@ Made a fully responsive Spotify Clone with React, JavaScript, SASS, Redux, Saga
 - Application can load user's existing playlists and albums
 - Application can search for Albums and playlists created by other users
 - Implemented Code Splitting to improve performance
+
+
+Test Credentials
+
+Email - test1267@gmail.com
+Password - test1267
