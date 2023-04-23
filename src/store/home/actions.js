@@ -19,3 +19,7 @@ export const getNewReleasesSuccess = (response) => ({
   type: action.GET_NEW_RELEASES_SUCCESS,
   response,
 });
+
+export const resetData = () => ({
+  type: action.RESET_FETCHED_ITEMS
+});

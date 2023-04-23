@@ -6,6 +6,7 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { actions as authActions } from "../../store/auth";
 import { actions as dataActions } from "../../store/data";
 import { actions as searchActions } from "../../store/search";
+import { actions as homeActions } from "../../store/home";
 import { debounce } from "../../helpers/methods";
 import { DARK_GREY_COLOR } from "../../constants/constants";
 import Button from "../Button";
@@ -38,6 +39,7 @@ const Topbar = () => {
   const handleLogout = () => {
     navigate("/");
     dispatch(dataActions.clearData());
+    dispatch(homeActions.resetData());
     dispatch(authActions.logOut());
   };
 
@@ -61,7 +63,7 @@ const Topbar = () => {
       {auth?.loggedIn && <div className={styles["profile-container"]}>
         <img className={styles["profile-image"]} src={profile?.images?.[0]?.url} alt="Profile Image"/>
         <label className={styles["profile-name"]}>{profile?.["display_name"]}</label>
-        <div style={{ padding: "10px", cursor: "pointer" }} onClick={handleLogout}>Logout</div>
+        <div className={styles["profile-logout"]} onClick={handleLogout}>Logout</div>
       </div>}
     </div>
   )

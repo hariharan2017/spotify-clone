@@ -20,6 +20,10 @@ const homeReducer = (state, action) => {
         ...state,
         releases: action.response?.albums?.items || []
       }
+    case actionTypes.RESET_FETCHED_ITEMS:
+      return {
+        artists: [], tracks: [], featPlaylists: [], releases: []
+      }
     default:
       return state;
   }
